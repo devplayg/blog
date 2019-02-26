@@ -12,25 +12,25 @@ title = "Developer Playground"
     name = "Music"
     title = "Music"
     url = "/music/"
+    weight = 4
+
+    [[menu.main]]
+    identifier = "tech"
+    name = "tech"
+    pre = ""
+    url = "/tech/"
     weight = 2
 
     [[menu.main]]
-    identifier = "golang"
-    name = "Golang"
-    pre = "<i class='fa fa-heart'></i>"
-    url = "/golang/"
+    identifier = "life"
+    name = "Life"
+    pre = ""
+    url = "/life/"
     weight = 3
-
-     [[menu.main]]
-    identifier = "sansoo"
-    name = "Sansoo"
-    pre = "<i class='fa fa-heart'></i>"
-    url = "/sansoo/"
-    weight = 4
 
     [[menu.main]]
     identifier = "about"
     name = "About"
-    pre = "<i class='fa fa-heart'></i>"
+    pre = ""
     url = "/about/"
-    weight = 90
+    weight = 1
