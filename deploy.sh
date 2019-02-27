@@ -1,9 +1,10 @@
 hugo -t hyde
+
+git add .
+git commit -m "changed"
+git push
+
 cd public
 git add .
-cd ../content
-git add .
-cd ..
-git commit -m "commit"
-git push origin master
-cd ..
+git commit -m "changed"
+git push
