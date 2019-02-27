@@ -16,7 +16,7 @@ title = "Developer Playground"
 
     [[menu.main]]
     identifier = "tech"
-    name = "tech"
+    name = "Tech"
     pre = ""
     url = "/tech/"
     weight = 2
