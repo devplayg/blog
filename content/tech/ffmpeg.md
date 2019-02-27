@@ -17,4 +17,5 @@ ffmpeg -f concat -i list.txt -c copy output.mp4
 file 1.mp4
 file 2.mp4
 file 3.mp4
+file 4.mp4
 ```
