@@ -1,6 +1,7 @@
 baseURL = "https://devplayg.com/"
 languageCode = "ko-kr"
 title = "Developer Playground"
+theme = "hyde"
 [params]
   author = "Devplayg"
   description = "music makes me high"
