@@ -1,37 +1,73 @@
-baseURL = "https://devplayg.com/"
+baseUrl = "https://devplayg.com/"
 languageCode = "ko-kr"
+
+author = "devplayg"
 title = "Developer Playground"
-theme = "hyde"
+
+theme = "hyde-hyde"
+
+## Hugo Built-in Features
+# disqusShortname = "https-htr3n-github-io" # Comment out to disable Disqus.
+# googleAnalytics = "UA-112764962-1"
+# enableRobotsTXT = true
+# enableEmoji = true
+
+
+summarylength = 30
+
+paginate = 7
+pluralizelisttitles = false
+
+
+
 [params]
-  author = "Devplayg"
-  description = "music makes me high"
+    author = "devplayg"
+    #description = "technology, thoughts, opinions, rants"
+    authorimage = "img/avatar.png"
+    dateformat = "Jan 2, 2006"
+    highlightjs = true
+    highlightjsstyle = "monokai"
+
+[params.social]
+    github = "devplayg"
+
+# [permalinks]
+#     posts = "/:year/:month/:slug/"
+#     vn = "/:year/:month/:slug/"
+
+# baseURL         = "https://devplayg.com/"
+# languageCode    = "ko-kr"
+# title           = "Developer Playground"
+# theme           = "hyde-hyde"
+#
+# [params]
+# author      = "Devplayg"
+# description = "code makes me high"
+#
 
 [menu]
+    [[menu.main]]
+        identifier = "tech"
+        # pre = "<i class='fa fa-heart'></i>"
+        post = "<span class='alert'>New!</span>"
+        name = "Tech"
+        weight = 200
+        url = "/tech/"
 
     [[menu.main]]
-    identifier = "music"
-    name = "Music"
-    title = "Music"
-    url = "/music/"
-    weight = 4
+        identifier = "music"
+        name = "Music"
+        weight = 300
+        url = "/music/"
 
     [[menu.main]]
-    identifier = "tech"
-    name = "Tech"
-    pre = ""
-    url = "/tech/"
-    weight = 2
+        identifier = "life"
+        name = "Life"
+        weight = 500
+        url = "/life/"
 
     [[menu.main]]
-    identifier = "life"
-    name = "Life"
-    pre = ""
-    url = "/life/"
-    weight = 3
-
-    [[menu.main]]
-    identifier = "about"
-    name = "About"
-    pre = ""
-    url = "/about/"
-    weight = 1
+        name = "About"
+        weight = 900
+        identifier = "about"
+        url = "/about/"
