@@ -13,9 +13,9 @@ googleAnalytics = "UA-112382230-1"
 # enableEmoji = true
 
 
-summarylength = 11
+summarylength = 10
 
-paginate = 7
+paginate = 1
 pluralizelisttitles = false
 
 
@@ -25,28 +25,23 @@ pluralizelisttitles = false
     #description = "technology, thoughts, opinions, rants"
     authorimage = "img/avatar.png"
     dateformat = "Jan 2, 2006"
+    copyright = "devplayg"
+
     highlightjs = true
     highlightjsstyle = "monokai"
+
+[params.meta]
+    description = "devplayg's blog :: technology, thoughts, opinions, and music"
+    keywords = "blog,tech,utils,golang,life,music"
+
 
 [params.social]
     github = "devplayg"
     twitter = "devplayg"
 
+    relatedPosts = true
 
 
-# [permalinks]
-#     posts = "/:year/:month/:slug/"
-#     vn = "/:year/:month/:slug/"
-
-# baseURL         = "https://devplayg.com/"
-# languageCode    = "ko-kr"
-# title           = "Developer Playground"
-# theme           = "hyde-hyde"
-#
-# [params]
-# author      = "Devplayg"
-# description = "code makes me high"
-#
 
 [menu]
     [[menu.main]]
@@ -74,3 +69,5 @@ pluralizelisttitles = false
         weight = 900
         identifier = "about"
         url = "/about/"
+
+
