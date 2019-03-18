@@ -2,13 +2,13 @@ baseUrl = "https://devplayg.com/"
 languageCode = "ko-kr"
 
 author = "devplayg"
-title = "Developer Playground"
+title = "DevPlayG"
 
 theme = "hyde-hyde"
 
 ## Hugo Built-in Features
 # disqusShortname = "https-htr3n-github-io" # Comment out to disable Disqus.
-# googleAnalytics = "UA-112764962-1"
+googleAnalytics = "UA-112382230-1"
 # enableRobotsTXT = true
 # enableEmoji = true
 
