@@ -14,4 +14,5 @@ draft: true
 
 [Introduction to bufio package in Golang](https://medium.com/golangspec/introduction-to-bufio-package-in-golang-ad7d1877f762).
 
+[Chunking large messages with gRPC](https://jbrandhorst.com/post/grpc-binary-blob-stream/)
 
