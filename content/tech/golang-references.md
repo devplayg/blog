@@ -7,7 +7,7 @@ categories : [ "tech" ]
 layout: post
 type:  "post"
 highlight: false
-draft: true
+draft: false
 ---
 
 ## bufio package
