@@ -16,3 +16,5 @@ draft: true
 
 [Chunking large messages with gRPC](https://jbrandhorst.com/post/grpc-binary-blob-stream/)
 
+[https://zhen.org/blog/graceful-shutdown-of-go-net-dot-listeners/](Graceful Shutdown of Go net.Listeners) 
+
