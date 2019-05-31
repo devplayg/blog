@@ -1,5 +1,5 @@
 
-## Multiple return [Run](https://play.golang.org/p/W46sTgkJmyM)
+## Multiple return [#](https://play.golang.org/p/W46sTgkJmyM)
 
 ```go
 package main
