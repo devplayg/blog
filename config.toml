@@ -1,73 +1,93 @@
 baseUrl = "https://devplayg.com/"
 languageCode = "ko-kr"
 
-author = "devplayg"
 title = "DevPlayG"
-
 theme = "hyde-hyde"
 
 ## Hugo Built-in Features
 disqusShortname = "https-devplayg-github-io"
 googleAnalytics = "UA-112382230-1"
-# enableRobotsTXT = true
-# enableEmoji = true
+enableRobotsTXT = true
 
+# summarylength = 30
+# paginate = 5
 
-summarylength = 10
-
-paginate = 1
 pluralizelisttitles = false
 
+# [params]
+#     author = "devplayg"
+#     description = "Developer Playground"
+#     authorimage = "img/avatar.png"
+#     dateformat = "Jan 2, 2006"
+#     copyright = "devplayg"
+#
+#     highlightjs = true
+#     highlightjsstyle = "monokai"
+#
+# [params.meta]
+#     description = "devplayg's blog :: technology, thoughts, opinions, and music"
+#     keywords = "blog,tech,utils,golang,life,music"
 
 
+## Site Settings
 [params]
-    author = "devplayg"
-    #description = "technology, thoughts, opinions, rants"
-    authorimage = "img/avatar.png"
+    author = "Devplayg"
+    title = "Developer Playground"
+    description = "Developer Playground"
+    authorimage = "/img/avatar.png"
     dateformat = "Jan 2, 2006"
+
+    # sidebar, copyright & license
     copyright = "devplayg"
+    #license = "CC BY-SA 4.0"
+    #licenseURL = "https://creativecommons.org/licenses/by-sa/4.0"
+    showBuiltWith = true
 
+    # https://highlightjs.org
     highlightjs = true
-    highlightjsstyle = "monokai"
-
-[params.meta]
-    description = "devplayg's blog :: technology, thoughts, opinions, and music"
-    keywords = "blog,tech,utils,golang,life,music"
+    highlightjsstyle = "github"
 
 
+    # please choose either GraphComment or Disqus or Utterances
+    #GraphCommentId = "..."
+    #UtterancesRepo = "..." # https://utteranc.es/
+    #UtterancesIssueTerm = "..." # pathname, url, title, og:title
+    #UtterancesTheme = "..." # github-light or github-dark
+
+    # Table of contents
+    #toc = none, "hugo", or "tocbot"
+
+## Social Accounts
 [params.social]
     github = "devplayg"
+    #instagram = "<username>"
+    #xing = "<username>"
+    #linkedin = "<username>"
     twitter = "devplayg"
-
-    relatedPosts = true
-
-
-
+    #facebook = "<username>"
+    #stackoverflow = "<username>"
+    #telegram = "<username>"
+    #email = "your-email@example.com"
+    # gravatar = "your-email@example.com"
 [menu]
     [[menu.main]]
         identifier = "tech"
-        # pre = "<i class='fa fa-heart'></i>"
-        post = "<span class='alert'>New!</span>"
         name = "Tech"
-        weight = 200
+        weight = 10
         url = "/tech/"
 
     [[menu.main]]
         identifier = "music"
         name = "Music"
-        weight = 300
+        weight = 20
         url = "/music/"
-
     [[menu.main]]
         identifier = "life"
         name = "Life"
-        weight = 500
+        weight = 30
         url = "/life/"
-
     [[menu.main]]
         name = "About"
-        weight = 900
+        weight = 40
         identifier = "about"
         url = "/about/"
-
-
