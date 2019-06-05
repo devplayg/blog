@@ -1,8 +1,9 @@
 ---
 title: "Pseudo-random permutation of the integers in Go"
-date: "2019-03-18T21:34:36+09:00"
+date: "2019-06-05T21:34:36+09:00"
 categories : [ "tech" ]
 tags : [ "golang", "random" ]
+draft: false
 ---
     
     package main

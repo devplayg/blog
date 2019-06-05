@@ -3,6 +3,7 @@ title: "Bash tips"
 date: 2019-03-18T21:34:36+09:00
 categories : [ "tech" ]
 tags : [ "bash", "tips", "shell", "sh", "tips"]
+draft: false
 ---
 
 ## Get current directory
