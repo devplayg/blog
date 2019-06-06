@@ -1,14 +1,12 @@
 ---
-title: "About"
+title: 'About'
 date: 2019-03-18T21:34:36+09:00
-lastmod: 2019-06-06T21:34:36+09:00
 categories:
-    - "about"
+    - about
 tags : 
-    - "about"
-    - "devplayg"
-type: "posts"
-author: "devplayg"
+    - about
+    - devplayg
+type: about
 ---
 
 ## Roles
@@ -33,3 +31,7 @@ author: "devplayg"
 * One band one sound
 * Happy people
 * Heal it
+* 설계본능
+* 개발본능
+* 언어는 도구다
+* 도구는 바뀔 수 있다.

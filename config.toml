@@ -7,7 +7,7 @@ theme = "hyde-hyde"
 ## Hugo Built-in Features
 disqusShortname = "https-devplayg-github-io"
 googleAnalytics = "UA-112382230-1"
-enableRobotsTXT = false
+enableRobotsTXT = true
 
 summarylength = 30
 # paginate = 5
@@ -46,6 +46,8 @@ pluralizelisttitles = false
     # https://highlightjs.org
     highlightjs = true
     highlightjsstyle = "agate"
+    highlightjslanguages = ["go"]
+
 
 
     # please choose either GraphComment or Disqus or Utterances
@@ -68,26 +70,32 @@ pluralizelisttitles = false
     #stackoverflow = "<username>"
     #telegram = "<username>"
     #email = "your-email@example.com"
-    # gravatar = "your-email@example.com"
+    #gravatar = "your-email@example.com"
+
 [menu]
     [[menu.main]]
         identifier = "tech"
         name = "Tech"
         weight = 10
         url = "/tech/"
-
     [[menu.main]]
         identifier = "music"
         name = "Music"
         weight = 20
         url = "/music/"
+
     [[menu.main]]
         identifier = "life"
         name = "Life"
         weight = 30
         url = "/life/"
     [[menu.main]]
+            name = "Tags"
+            weight = 40
+            identifier = "tag"
+            url = "/tags/"
+    [[menu.main]]
         name = "About"
-        weight = 40
+        weight = 50
         identifier = "about"
         url = "/about/"
