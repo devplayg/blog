@@ -10,6 +10,8 @@ tags :
 type: about
 ---
 
+제일 중요한 어바웃 페이지는 작성중... 
+
 ### Music and codes make me high
 
 ## Roles
