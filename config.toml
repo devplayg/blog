@@ -9,7 +9,7 @@ disqusShortname = "https-devplayg-github-io"
 googleAnalytics = "UA-112382230-1"
 enableRobotsTXT = false
 
-# summarylength = 30
+summarylength = 30
 # paginate = 5
 
 pluralizelisttitles = false
@@ -45,7 +45,7 @@ pluralizelisttitles = false
 
     # https://highlightjs.org
     highlightjs = true
-    highlightjsstyle = "github"
+    highlightjsstyle = "agate"
 
 
     # please choose either GraphComment or Disqus or Utterances

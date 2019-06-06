@@ -4,6 +4,7 @@ date: 2019-03-03T17:14:41+09:00
 categories : [ "music" ]
 tags : [ "music", "2018", "awards"]
 draft: false
+type: "posts"
 ---
 
 * 나플라 - Smile

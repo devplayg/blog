@@ -1,9 +1,14 @@
 ---
 title: "About"
 date: 2019-03-18T21:34:36+09:00
-categories : [ "about" ]
-tags : [ "about", "devplayg" ]
-type: "about"
+lastmod: 2019-06-06T21:34:36+09:00
+categories:
+    - "about"
+tags : 
+    - "about"
+    - "devplayg"
+type: "posts"
+author: "devplayg"
 ---
 
 ## Roles
