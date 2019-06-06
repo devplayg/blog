@@ -1,13 +1,16 @@
 ---
-title: 'About'
+title: 'Developer Playground'
 date: 2019-03-18T21:34:36+09:00
 categories:
     - about
 tags : 
-    - about
     - devplayg
+    - playground
+    - have fun
 type: about
 ---
+
+### Music and codes make me high
 
 ## Roles
 
@@ -33,5 +36,4 @@ type: about
 * Heal it
 * 설계본능
 * 개발본능
-* 언어는 도구다
-* 도구는 바뀔 수 있다.
+* 언어는 도구일뿐
