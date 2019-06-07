@@ -25,7 +25,7 @@
     </div>
     <div class="collapsible-menu">
       <input type="checkbox" id="menuToggle">
-      <label for="menuToggle">{{ .Site.Title }}</label>
+        <label for="menuToggle"><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></label>
       <div class="menu-content">
         {{ partial "sidebar/menu.html" . }}
         {{ partial "sidebar/social.html" . }}
