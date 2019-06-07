@@ -41,7 +41,7 @@ pluralizelisttitles = false
     copyright = "devplayg"
     #license = "CC BY-SA 4.0"
     #licenseURL = "https://creativecommons.org/licenses/by-sa/4.0"
-    # showBuiltWith = true
+    showBuiltWith = true
 
     # https://highlightjs.org
     highlightjs = true
@@ -83,19 +83,23 @@ pluralizelisttitles = false
         name = "Music"
         weight = 20
         url = "/music/"
-
     [[menu.main]]
         identifier = "life"
         name = "Life"
         weight = 30
         url = "/life/"
     [[menu.main]]
-            name = "Tags"
-            weight = 40
-            identifier = "tag"
-            url = "/tags/"
+        identifier = "history"
+        name = "History"
+        weight = 40
+        url = "/history/"
+    [[menu.main]]
+        name = "Tags"
+        weight = 50
+        identifier = "tag"
+        url = "/tags/"
     [[menu.main]]
         name = "About"
-        weight = 50
+        weight = 60
         identifier = "about"
         url = "/about/"
