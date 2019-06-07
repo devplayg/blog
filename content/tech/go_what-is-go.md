@@ -7,6 +7,9 @@ categories:
 tags: 
     - go
     - language
+    - Robert Griesemer
+    - Rob Pike
+    - Ken Thompson
 type: posts
 ---
 

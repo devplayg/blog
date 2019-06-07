@@ -7,6 +7,9 @@ tags :
     - devplayg
     - playground
     - have fun
+    - Bob Marley
+    - Rob Pike
+    - Little Miss Sunshine 
 type: posts
 ---
 
