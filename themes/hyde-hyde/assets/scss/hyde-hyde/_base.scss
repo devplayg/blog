@@ -27,12 +27,13 @@ h1 {
 	font-size: $h1-font-size;
 	line-height: $h1-line-height;
 	margin-bottom: 1rem;
-  font-weight: bold;
 }
 
 h2 {
 	font-size: $h2-font-size;
 	margin-bottom: .5rem;
+  border-bottom: 1px solid #eaecef;
+  padding-bottom: .3em;
 }
 
 h3 {
