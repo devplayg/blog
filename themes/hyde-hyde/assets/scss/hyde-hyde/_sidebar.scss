@@ -8,7 +8,7 @@
     color: $gray-1;
     border: none;
     &:hover {
-      color: $link-color;
+      color: $light-orange;
     }
     &:focus {
       color: $link-color;
@@ -71,6 +71,21 @@
 
 .img--caption {
 	font-style: italic;
+}
+
+.menu-tag-and-category {
+  list-style: none;
+  li {
+    display: inline-block;
+    padding: 0.35em 0.6em;
+    font-size: 0.75rem;
+    font-weight: normal;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    background-color: #555555;
+  }
 }
 
 %small-center-text {

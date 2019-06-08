@@ -1,7 +1,7 @@
 <div>
 	<ul class="sidebar-nav">
-		{{ $currentPage := . }} 
-		{{ range .Site.Menus.main }} 
+		{{ $currentPage := . }}
+		{{ range .Site.Menus.main }}
 			{{ if .HasChildren }}
 			<li {{ if $currentPage.HasMenuCurrent "main" . }}class="active"{{ end }}>
 				<a href="#">{{ .Pre }}
@@ -14,14 +14,18 @@
 					</li>
 					{{ end }}
 				</ul>
+		    </li>
 			{{ else }} <!-- No children -->
-				<li>
-					<a href="{{.URL}}">{{ .Pre }}
-						<span>{{ .Name | title }}</span>
-					</a>
-				</li>
-			{{ end }} 
+            <li>
+                <a href="{{.URL}}">{{ .Pre }}
+                    <span>{{ .Name | title }}</span>
+                </a>
+            </li>
+			{{ end }}
 		{{ end }}
-		</li>
 	</ul>
+    <ul class="menu-tag-and-category">
+        <li><a href="{{ .Site.BaseURL }}/categories">categories</a></li>
+        <li><a href="{{ .Site.BaseURL }}/tags">tags</a></li>
+    </ul>
 </div>
