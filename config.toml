@@ -1,7 +1,7 @@
 baseUrl = "https://devplayg.com/"
 languageCode = "ko-kr"
 
-title = "DevPlayG"
+title = "Developer Playground"
 theme = "hyde-hyde"
 
 ## Hugo Built-in Features
@@ -33,9 +33,9 @@ pluralizelisttitles = false
 [params]
     author = "Devplayg"
     title = "Developer Playground"
-    description = "Developer Playground"
+    description = ""
     authorimage = "/img/avatar.png"
-    dateformat = "Jan 2, 2006"
+    dateformat = "Mon, Jan 2, 2006"
 
     # sidebar, copyright & license
     copyright = "devplayg"

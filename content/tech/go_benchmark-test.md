@@ -17,7 +17,7 @@ type: posts
 
 해시 알고리즘 성능을 측정하기 위한 코드 작성
 
-hash_test.go
+`hash_test.go`
 
 ```go
 package test

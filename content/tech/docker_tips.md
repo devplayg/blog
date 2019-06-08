@@ -16,15 +16,14 @@ type: posts
     
     docker run -p 8000:8000 -v e:/gohome:/gohome -it --name test ubuntu bash
 
-### Repository update
+### Update linux repository
 
     sed -i s#archive\.ubuntu\.com#mirror.kakao.com#g /etc/apt/sources.list
     apt update && apt install -y vim net-tools inetutils-ping telnet curl
     
-### Installing Go
+### Install Go
 
     curl https://dl.google.com/go/go1.12.5.linux-amd64.tar.gz | tar xvfz - -C /
-
 
 ### Set profile
 
