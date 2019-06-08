@@ -16,3 +16,7 @@ type: posts
 ### Get current directory
 
     DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+    
+### How to count number of files in each directory
+
+    du -a | cut -d/ -f2 | sort | uniq -c | sort -nr 

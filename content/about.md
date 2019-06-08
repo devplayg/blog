@@ -32,10 +32,10 @@ type: posts
     * Shell
     * Java
     * Etc.
-    
-    |<img src="/img/avatars/linux.png">|<img src="/img/avatars/gopher.png">|<img src="/img/avatars/docker.png">|<img src="/img/avatars/perl.png">|
-    |---|---|---|---|
-    |Linux|Go|Docker|Perl|
+
+|<img src="/img/avatars/linux.png">|<img src="/img/avatars/gopher.png">|<img src="/img/avatars/docker.png">|<img src="/img/avatars/perl.png">|
+|---|---|---|---|
+|Linux|Go|Docker|Perl|
 
 ### Avatars
 

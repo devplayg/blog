@@ -8,7 +8,7 @@ tags:
   - random
   - go
 ---
-    
+   
 ```
 package main
 
