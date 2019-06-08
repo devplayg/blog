@@ -3,12 +3,14 @@ title: 'Docker Tips'
 date: 2019-06-07T00:28:15+09:00
 lastmod: 2019-06-07T00:28:15+09:00
 categories: 
-  - util
   - docker
+  - ubuntu
 tags: 
   - tips
   - virtual machine
   - docker
+  - ubuntu
+  - container
 type: posts
 ---
 

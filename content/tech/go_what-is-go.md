@@ -23,7 +23,8 @@ type: posts
 * 정적 타이핑, 정적 런타임, 컴파일 언어임 
 * 가독성이 높고 사용하기 편함
 * 고성능 네트워킹 및 멀티 프로세싱 처리에 적합함
-* C언어와 Syntax가 유사함. 그러나 Garbage collection이 지원됨,
+* C언어와 Syntax가 유사함
+* Garbage collection 기능이 있음,
   
 ### Go의 아버지들
 
@@ -31,7 +32,7 @@ type: posts
 
 #### 로버트 그리즈머 (Robert Griesemer)
 
-* Java hotspot compiler, 즉 JVM을 개발함 (Go언어의 GC에 큰 역할을 하지 않았나 싶음)
+* Java hotspot compiler(JVM) 개발함
 * Chrome Javascript v8 엔진을 개발함
 
 #### 롭 파이크 (Rob Pike)
