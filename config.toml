@@ -69,7 +69,7 @@ pluralizelisttitles = false
     #facebook = "<username>"
     #stackoverflow = "<username>"
     #telegram = "<username>"
-    #email = "your-email@example.com"
+    email = "devplayg@gmail.com"
     #gravatar = "your-email@example.com"
 
 [menu]
