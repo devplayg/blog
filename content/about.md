@@ -33,16 +33,16 @@ type: posts
     * Java
     * Etc.
     
-    |<img src="/img/about/linux.png" height="100">|<img src="/img/gopher.png" height="100">|<img src="/img/about/docker.png" height="100">|<img src="/img/about/perl.png" height="100">|
+    |<img src="/img/avatars/linux.png">|<img src="/img/avatars/gopher.png">|<img src="/img/avatars/docker.png">|<img src="/img/avatars/perl.png">|
     |---|---|---|---|
     |Linux|Go|Docker|Perl|
 
 ### Avatars
 
-|<img src="/img/avatars/wondory_blue.png" height="120">|<img src="/img/avatars/wondory_blue_raggaeface.png" height="120">|<img src="/img/avatars/wondory_blue_sunglasses.png" height="120">||
+|<img src="/img/avatars/wondory_green.png">|<img src="/img/avatars/wondory_green_raggaeface.png">|<img src="/img/avatars/wondory_green_sunglasses.png">|<img src="/img/avatars/wondory_green_raggaehair.png">|
 |---|---|---|---|
-|<img src="/img/avatars/wondory_green.png" height="120">|<img src="/img/avatars/wondory_green_raggaeface.png" height="120">|<img src="/img/avatars/wondory_green_sunglasses.png" height="120">|<img src="/img/avatars/wondory_green_raggaehair.png" height="120">|
-|<img src="/img/avatars/wondory_olive.png" height="120">||||
+|<img src="/img/avatars/wondory_blue.png">|<img src="/img/avatars/wondory_blue_raggaeface.png">|<img src="/img/avatars/wondory_blue_sunglasses.png">||
+|<img src="/img/avatars/wondory_olive.png">||||
 
 ### **Life Sayings and Quotes**
 
