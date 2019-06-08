@@ -2,11 +2,14 @@
 title: 'Docker 환경에서 Apache Kafka 설치'
 date: 2019-06-06T17:14:41+09:00
 categories:
-  - tech
-tags:
-  - apache kafka
+  - distributed platform
   - kafka
-  - installation
+tags:
+  - distributed platform
+  - kafka
+  - apache kafka
+  - apache
+  - streaming
 type: posts
 ---
 

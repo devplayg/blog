@@ -2,11 +2,14 @@
 title: Bash tips
 date: 2019-03-18T21:34:36+09:00
 categories: 
-    - tech
+  - programming language
+  - bash
+  - linux
 tags:
-    - bash
-    - tips
-    - linux
+  - tips
+  - bash
+  - linux
+  - current directory
 type: posts
 ---
 

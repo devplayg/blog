@@ -3,17 +3,20 @@ title: 'Go Benchmarks'
 date: 2019-06-07T23:45:41+09:00
 lastmod: 2019-06-07T23:45:41+09:00
 categories: 
-    - tech
-tags: 
+    - programming language
     - go
+tags: 
     - test
     - benchmark
     - hash
     - algorithm
+    - go
 type: posts
 ---
 
-### Benchmark 코드 작성
+### Benchmarks in Go
+
+Benchmarks are placed inside "_test.go" files
 
 해시 알고리즘 성능을 측정하기 위한 코드 작성
 

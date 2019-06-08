@@ -1,16 +1,16 @@
 ---
 title: 'Go 언어'
-#subtitle: 'asdfasdfasdf'
+subtitle: 'asdfasdfasdf'
 date: 2019-06-08T00:10:00+09:00
 lastmod: 2019-06-08T00:10:00+09:00
 categories: 
-    - tech
+  - programming language
+  - go
 tags: 
-    - go
-    - language
-    - Robert Griesemer
-    - Rob Pike
-    - Ken Thompson
+  - Robert Griesemer
+  - Rob Pike
+  - Ken Thompson
+  - go
 type: posts
 ---
 
@@ -38,6 +38,7 @@ type: posts
 
 * Plan 9 OS 개발함
 * UTF-8 을 아래 켄 톰슨과 같이 개발함
+* *"Do not communicate by sharing memory; share memory by communicating."*
 
 #### 켄 톰슨 (Ken Thompson)
 

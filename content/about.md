@@ -45,7 +45,7 @@ Bob Marley & The Wailers
 
 Movie "Little miss sunshine"
 
-> *"Olive, you are the most beautiful girl in the whole world"*
+> *"Olive, you are the most beautiful girl in the whole world."*
 
 Movie "Drumline"
 

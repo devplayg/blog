@@ -3,10 +3,12 @@ title: 'Docker Tips'
 date: 2019-06-07T00:28:15+09:00
 lastmod: 2019-06-07T00:28:15+09:00
 categories: 
-    - tech
+  - util
+  - docker
 tags: 
-    - docker
-    - tips
+  - tips
+  - virtual machine
+  - docker
 type: posts
 ---
 
