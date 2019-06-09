@@ -1,6 +1,5 @@
 ---
 title: 'Go 언어'
-subtitle: 'asdfasdfasdf'
 date: 2019-06-08T00:10:00+09:00
 lastmod: 2019-06-08T00:10:00+09:00
 categories: 
@@ -11,6 +10,7 @@ tags:
   - Rob Pike
   - Ken Thompson
   - go
+  - golang
 type: posts
 ---
 
