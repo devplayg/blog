@@ -1,15 +1,18 @@
 ---
-title: 'Docker 환경에서 Apache Kafka 설치'
+title: '1. Kafka 설치를 위한 Docker 환경구성'
+series: 
+    - 'Docker 환경에서 Kafka 설치'
 date: 2019-06-06T17:14:41+09:00
 categories:
   - distributed platform
   - kafka
 tags:
   - distributed platform
+  - docker
   - kafka
-  - apache kafka
-  - apache
-  - streaming
+  - zookeeper
+  - producer
+  - consumer
 type: posts
 ---
 
@@ -79,9 +82,14 @@ type: posts
 
 #### Kafka/Zookeeper 컨테이너 각각 접속
 
+#### (선택) Ubuntu Repository를 mirror.kakao.com으로 설정 
+
+패키지 다운로드 시 속도가 빠름
+
+    sed -i s#archive\.ubuntu\.com#mirror.kakao.com#g /etc/apt/sources.list
+    
 #### 필수 패키지 다운로드
     
-    sed -i s#archive\.ubuntu\.com#mirror.kakao.com#g /etc/apt/sources.list
     apt update && apt install -y vim net-tools inetutils-ping telnet curl openjdk-11-jdk
 
 #### Java 버전 확인

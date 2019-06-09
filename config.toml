@@ -14,21 +14,6 @@ summarylength = 30
 
 pluralizelisttitles = false
 
-# [params]
-#     author = "devplayg"
-#     description = "Developer Playground"
-#     authorimage = "img/avatar.png"
-#     dateformat = "Jan 2, 2006"
-#     copyright = "devplayg"
-#
-#     highlightjs = true
-#     highlightjsstyle = "monokai"
-#
-# [params.meta]
-#     description = "devplayg's blog :: technology, thoughts, opinions, and music"
-#     keywords = "blog,tech,utils,golang,life,music"
-
-
 ## Site Settings
 [params]
     author = "Devplayg"
@@ -58,6 +43,13 @@ pluralizelisttitles = false
 
     # Table of contents
     #toc = none, "hugo", or "tocbot"
+
+# taxonomies
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+
 
 ## Social Accounts
 [params.social]

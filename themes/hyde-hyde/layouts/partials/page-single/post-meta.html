@@ -2,25 +2,39 @@
 <div class="post__meta">
     <!-- categories -->
     {{ with .Params.categories }}
-      {{ $total := len . }}
-      {{ if gt $total 0 }}
-          {{ $total := sub $total 1 }}
-          {{ range $i, $cat := sort . }}
-              <a class="badge badge-category" href="{{ "/categories/" | relURL }}{{ $cat | urlize }}">{{ $cat }}</a>
-          {{ end }}
-      {{ end }}
+        {{ $total := len . }}
+        {{ if gt $total 0 }}
+            {{ $total := sub $total 1 }}
+            {{ range $i, $cat := . }}
+                <a class="badge badge-category" href="{{ "/categories/" | relURL }}{{ $cat | urlize }}">{{ $cat }}</a>
+            {{ end }}
+        {{ end }}
     {{ end }}
+
     <!-- tags -->
     {{ with .Params.tags }}
-      {{ $total := len . }}
-      {{ if gt $total 0 }}
-          {{ $subtotal := sub $total 1 }}
-          {{ range $i, $tag := . }}
-          <a class="badge badge-tag" href="{{ "/tags/" | relURL }}{{ $tag | urlize }}">{{ $tag | lower }}</a>
-          {{ if lt $i $subtotal }} {{ end }}
-      {{ end }}
+        {{ $total := len . }}
+        {{ if gt $total 0 }}
+            {{ $subtotal := sub $total 1 }}
+            {{ range $i, $tag := . }}
+                <a class="badge badge-tag" href="{{ "/tags/" | relURL }}{{ $tag | urlize }}">{{ $tag | lower }}</a>
+                {{ if lt $i $subtotal }} {{ end }}
+            {{ end }}
+        {{ end }}
     {{ end }}
-    {{ end }}
-    <br/>
 </div>
+
+<div class="post__series">
+    <!-- Series -->
+    {{ with .Params.series }}
+        {{ $total := len . }}
+        {{ if gt $total 0 }}
+            {{ $total := sub $total 1 }}
+            {{ range $i, $cat := . }}
+                <span class="badge-series">Series</span>: <a class="series" href="{{ "/series/" | relURL }}{{ $cat | urlize }}">{{ $cat }}</a>
+            {{ end }}
+        {{ end }}
+    {{ end }}
+</div>
+
 {{ end }}
