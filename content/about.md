@@ -13,19 +13,22 @@ tags :
 type: posts
 ---
 
+### What makes me high
+
+Music, Coding, Walking, Thinking, Playing, Eating
+
+### What makes me down
+
+Life without what makes me high 
+
 ### **Please tell me who you are.**
 
 * iam := []byte("**devplayg**")
 * Software engineer, especially Gopher
 
-### **Are you enjoying the coding life?**
-
-* Absolutely! Coding makes me high.
-* Getting stressed time to time, I code in the Go language or blog on Github. 
-
 ### **What've you been for a long time?**
 
-* Making many kinds of bugs since 2000
+* Making kinds of bugs since 2000
 * Some stuff used to make bugs
     * Go
     * Perl
@@ -33,16 +36,17 @@ type: posts
     * Java
     * Etc.
 
-|<img src="/img/avatars/linux.png">|<img src="/img/avatars/gopher.png">|<img src="/img/avatars/docker.png">|<img src="/img/avatars/perl.png">|
+|<img src="/img/avatars/linux.png">|<img src="/img/avatars/gopher.png">|<img src="/img/avatars/perl.png">|<img src="/img/avatars/java.png">|
 |---|---|---|---|
-|Linux|Go|Docker|Perl|
+|Linux|Go|Perl|Java|
 
 ### Avatars
 
 |<img src="/img/avatars/wondory_green.png">|<img src="/img/avatars/wondory_green_raggaeface.png">|<img src="/img/avatars/wondory_green_sunglasses.png">|<img src="/img/avatars/wondory_green_raggaehair.png">|
 |---|---|---|---|
 |<img src="/img/avatars/wondory_blue.png">|<img src="/img/avatars/wondory_blue_raggaeface.png">|<img src="/img/avatars/wondory_blue_sunglasses.png">||
-|<img src="/img/avatars/wondory_olive.png">||||
+|<img src="/img/avatars/wondory_olive.png">|<img src="/img/avatars/wondory_raggaebg.png">|||
+
 
 ### **Life Sayings and Quotes**
 
