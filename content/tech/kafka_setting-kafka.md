@@ -13,26 +13,24 @@ tags:
   - zookeeper
   - producer
   - consumer
+  - 카프카
+  - 주키퍼
 type: posts
 ---
 
-## Kafka 설정
+### Kafka 컨테이너 구성
 
-기본 정보는 아래와 같다.
-
-| Hostname | Broker ID |IP|
-|:-------:|:---:|:---:|
+|호스트명 |Broker ID |IP|
+|---|---|---|
 |kafka1| 1 |172.17.0.5|
 |kafka2| 2 |172.17.0.6|
 |kafka3| 3 |172.17.0.7|
 
 ### 컨테이너 개별 설정
 
-* 디렉토리 생성
+디렉토리 생성
 
-    ```
     mkdir -p /data1 /data2 /data3
-    ```
 
 ### 컨테이너 개별 설정    
 
@@ -72,5 +70,7 @@ type: posts
     ```
 
 ### Kafka 시작
+
+각 컨테이너에서 Kafka 시작
 
     $KAFKA_HOME/bin/kafka-server-start.sh $KAFKA_HOME/config/server.properties

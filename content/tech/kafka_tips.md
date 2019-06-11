@@ -1,22 +1,41 @@
-# Kafka Tips
+---
+title: '4. Kafka 명령어'
+series: 
+    - 'Docker 환경에서 Kafka 설치'
+date: 2019-06-11T18:55:12+09:00
+categories:
+  - distributed platform
+  - kafka
+tags:
+  - distributed platform
+  - docker
+  - kafka
+  - zookeeper
+  - producer
+  - consumer
+  - 카프카
+  - 주키퍼
+  - 카프카 명령어
+type: posts
+---
 
-### Create a topic
+### 토픽 생성
 
     $KAFKA_HOME/bin/kafka-topics.sh --bootstrap-server $KAFKA --replication-factor 3 --partitions 5 --topic my-topic --create
 
-### List all topics
+### 토픽 목록 출력
 
     $KAFKA_HOME/bin/kafka-topics.sh --bootstrap-server $KAFKA --list
 
-### Describe a topic
+### 토픽 상새정보 출력
 
     $KAFKA_HOME/bin/kafka-topics.sh --bootstrap-server $KAFKA --describe --topic my-topic
     
-### Delete a topic    
+### 토픽 삭제    
     
     $KAFKA_HOME/bin/kafka-topics.sh --bootstrap-server $KAFKA --delete --topic my-topic
 
-### List offsets of a topic
+### 토픽 오프셋(Offset) 조회
 
 * Earliest offsets
     
@@ -30,14 +49,14 @@
     $KAFKA_HOME/bin/kafka-run-class.sh kafka.tools.GetOffsetShell --broker-list $KAFKA -topic my-topic --time -2
     ```
     
-### Describe group list
+### 그룹 목록 출력
 
     $KAFKA_HOME/bin/kafka-consumer-groups.sh --bootstrap-server $KAFKA --list
     ---
     testgroup1
     testgroup2
 
-### Describe a group
+### 그룹 상세정보 출력
 
     $KAFKA_HOME/bin/kafka-consumer-groups.sh --bootstrap-server $KAFKA --describe --group testgroup2
     ---
@@ -50,7 +69,7 @@
     test-offset     4          64              64              0               -               -               -
     test-offset     3          58              58              0               -               -               -
     
-### Reset offsets of a group
+### 그룹 Offset 초기화
 
     $KAFKA_HOME/bin/kafka-consumer-groups.sh --bootstrap-server $KAFKA --group testgroup2 --topic test-offset --reset-offsets --to-earliest --execute
     ---

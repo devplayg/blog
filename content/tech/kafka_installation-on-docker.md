@@ -18,14 +18,14 @@ type: posts
 
 ### 설치 버전    
 
-* `OS`: Docker Ubuntu 18.04   
-* `Kafka`: 2.2 [[Download]](http://apache.mirror.cdnetworks.com/kafka/2.2.0/kafka_2.12-2.2.0.tgz)
-* `Zookeeper`: 3.4.13
-* `Java`: OpenJDK 11.0.3    
+* Docker Ubuntu 18.04   
+* Kafka 2.2 [[Download]](http://apache.mirror.cdnetworks.com/kafka/2.2.0/kafka_2.12-2.2.0.tgz)
+* Zookeeper 3.4.13
+* OpenJDK 11.0.3    
 
 ### Docker 컨테이너 구성
 
-|구분       | Hostname | IP         |
+|구분       | 호스트명  | IP         |
 |-----------|----------|------------|
 |Zookeeper  | zoo1     | 172.17.0.2 |
 |           | zoo2     | 172.17.0.3 |
