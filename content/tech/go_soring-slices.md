@@ -1,6 +1,5 @@
 ---
 title: Sorting slices and user-defined collections in Go
-draft: true
 date: 2019-06-11T22:02:31+09:00
 lastmod: 2019-06-11T22:02:31+09:00
 categories: 
@@ -12,9 +11,7 @@ tags:
     - sort
     - sort slices
     - example
-    - sorting map in go
 type: posts
-draft: true
 ---
 
 it couldn't be better
