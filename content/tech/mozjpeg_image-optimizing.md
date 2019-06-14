@@ -48,17 +48,13 @@ Ubuntu 18.04
 
 ### 이미지 압축 테스트
 
-    ```
     $ ./cjpeg-static -outfile [output file]  -optimise [input file]
-    ```
 
 압축률 미세 조정하기
 
-    ```
     $ ./cjpeg-static -outfile /gohome/img/my-image-optimized.jpg  -optimise               /gohome/img/my-image.jpg
     $ ./cjpeg-static -outfile /gohome/img/my-image-20.jpg         -optimise -quality  20  /gohome/img/my-image.jpg
     $ ./cjpeg-static -outfile /gohome/img/my-image-40.jpg         -optimise -quality  40  /gohome/img/my-image.jpg
     $ ./cjpeg-static -outfile /gohome/img/my-image-60.jpg         -optimise -quality  60  /gohome/img/my-image.jpg
     $ ./cjpeg-static -outfile /gohome/img/my-image-80.jpg         -optimise -quality  80  /gohome/img/my-image.jpg
     $ ./cjpeg-static -outfile /gohome/img/my-image-100.jpg        -optimise -quality 100  /gohome/img/my-image.jpg
-    ```
