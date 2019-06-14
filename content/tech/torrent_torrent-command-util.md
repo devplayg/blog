@@ -1,5 +1,5 @@
 ---
-title: 'Go 토렌트 클라이언트를 실행해보자'
+title: 'Go언어로 토렌트 클라이언트를 실행해보자'
 subtitle: 'Torrent command-line client in Go'
 date: 2019-06-13T13:11:09+09:00
 categories:
@@ -9,6 +9,7 @@ categories:
 tags
     - golang
     - go
+    - Go언어
     - torrent
     - torrent client
     - command line
