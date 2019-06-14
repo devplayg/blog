@@ -32,31 +32,33 @@ Ubuntu 18.04
 
 ### 필수 라이브러리 설치 (Requirements)
 
-    sudo apt-get update
-    sudo apt-get install cmake autoconf automake libtool make pkg-config git nasm
+    $ sudo apt-get update
+    $ sudo apt-get install cmake autoconf automake libtool make pkg-config git nasm
 
 ### 소스파일 다운로드 (Download source)
 
-    git clone https://github.com/mozilla/mozjpeg.git
+    $ git clone https://github.com/mozilla/mozjpeg.git
 
 ### 컴파일 (Compile)
 
-    cd mozjpeg
-    mkdir build && cd build
-    sudo cmake ../
-    sudo make install
+    $ cd mozjpeg
+    $ mkdir build && cd build
+    $ sudo cmake ../
+    $ sudo make install
 
 ### 이미지 압축 테스트
 
     ```
-    ./cjpeg-static -outfile [output file]  -optimise [input file]
+    $ ./cjpeg-static -outfile [output file]  -optimise [input file]
     ```
 
+압축률 미세 조정하기
+
     ```
-    ./cjpeg-static -outfile /gohome/img/my-image-optimized.jpg  -optimise               /gohome/img/my-image.jpg
-    ./cjpeg-static -outfile /gohome/img/my-image-20.jpg         -optimise -quality  20  /gohome/img/my-image.jpg
-    ./cjpeg-static -outfile /gohome/img/my-image-40.jpg         -optimise -quality  40  /gohome/img/my-image.jpg
-    ./cjpeg-static -outfile /gohome/img/my-image-60.jpg         -optimise -quality  60  /gohome/img/my-image.jpg
-    ./cjpeg-static -outfile /gohome/img/my-image-80.jpg         -optimise -quality  80  /gohome/img/my-image.jpg
-    ./cjpeg-static -outfile /gohome/img/my-image-100.jpg        -optimise -quality 100  /gohome/img/my-image.jpg
+    $ ./cjpeg-static -outfile /gohome/img/my-image-optimized.jpg  -optimise               /gohome/img/my-image.jpg
+    $ ./cjpeg-static -outfile /gohome/img/my-image-20.jpg         -optimise -quality  20  /gohome/img/my-image.jpg
+    $ ./cjpeg-static -outfile /gohome/img/my-image-40.jpg         -optimise -quality  40  /gohome/img/my-image.jpg
+    $ ./cjpeg-static -outfile /gohome/img/my-image-60.jpg         -optimise -quality  60  /gohome/img/my-image.jpg
+    $ ./cjpeg-static -outfile /gohome/img/my-image-80.jpg         -optimise -quality  80  /gohome/img/my-image.jpg
+    $ ./cjpeg-static -outfile /gohome/img/my-image-100.jpg        -optimise -quality 100  /gohome/img/my-image.jpg
     ```
