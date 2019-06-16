@@ -12,6 +12,7 @@
         </small>
     </h1>
     {{ partial "page-single/post-meta.html" . }}
+    {{ partial "page-single/post-series.html" . }}
   </header>
   {{ $tableOfContents := .TableOfContents }}
   {{ with .Site.Params.toc }}
@@ -32,6 +33,7 @@
   <div class="post">
     {{ .Content }}
   </div>
+    {{ partial "page-single/post-series.html" . }}
   {{ partial "page-single/post-navigation.html" . }}
   {{ partial "page-single/post-related.html" . }}
   {{ partial "page-single/post-comment.html" . }}

@@ -80,11 +80,11 @@ pluralizelisttitles = false
         name = "Life"
         weight = 30
         url = "/life/"
-    [[menu.main]]
-        identifier = "history"
-        name = "History"
-        weight = 40
-        url = "/history/"
+#    [[menu.main]]
+#        identifier = "history"
+#        name = "History"
+#        weight = 40
+#        url = "/history/"
 #    [[menu.main]]
 #        name = "Tags"
 #        weight = 50

@@ -1,0 +1,11 @@
+{{ with .Params.series }}
+    {{ $total := len . }}
+    {{ if gt $total 0 }}
+    <div class="post__series">
+        {{ $total := sub $total 1 }}
+        {{ range $i, $cat := . }}
+            <span class="badge-series">Series</span>: <a class="series" href="{{ "/series/" | relURL }}{{ $cat | urlize }}">{{ $cat }}</a>
+        {{ end }}
+    </div>
+    {{ end }}
+{{ end }}

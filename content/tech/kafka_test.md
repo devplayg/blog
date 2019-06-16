@@ -93,7 +93,7 @@ type: posts
 변경
 
 ```
-$KAFKA_HOME/bin/kafka-consumer-groups.sh --bootstrap-server $KAFKA --group testgroup2 --topic test-offset --reset-offsets --to-earliest --execute
+$ $KAFKA_HOME/bin/kafka-consumer-groups.sh --bootstrap-server $KAFKA --group testgroup2 --topic test-offset --reset-offsets --to-earliest --execute
 TOPIC                          PARTITION  NEW-OFFSET
 test-offset                    2          0
 test-offset                    1          0
@@ -105,8 +105,7 @@ test-offset                    3          0
 확인
 
 ```
-$KAFKA_HOME/bin/kafka-consumer-groups.sh --bootstrap-server $KAFKA --group testgroup2 --describe
----
+$ $KAFKA_HOME/bin/kafka-consumer-groups.sh --bootstrap-server $KAFKA --group testgroup2 --describe
 Consumer group 'testgroup2' has no active members.                                                                         
                                                                                                                            
 TOPIC           PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID     HOST            CLIENT-ID       
@@ -123,8 +122,7 @@ test-offset     3          0               58              58              -    
 변경
 
 ```
-$KAFKA_HOME/bin/kafka-consumer-groups.sh --bootstrap-server $KAFKA --group testgroup2 --topic test-offset --reset-offsets --to-offset 40  --execute
----
+$ $KAFKA_HOME/bin/kafka-consumer-groups.sh --bootstrap-server $KAFKA --group testgroup2 --topic test-offset --reset-offsets --to-offset 40  --execute
 TOPIC                          PARTITION  NEW-OFFSET
 test-offset                    2          40
 test-offset                    1          40
@@ -136,9 +134,8 @@ test-offset                    3          40
 확인
 
 ```
-$KAFKA_HOME/bin/kafka-consumer-groups.sh --bootstrap-server $KAFKA --group testgroup2 --describe
+$ $KAFKA_HOME/bin/kafka-consumer-groups.sh --bootstrap-server $KAFKA --group testgroup2 --describe
 Consumer group 'testgroup2' has no active members.
-
 TOPIC           PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID     HOST            CLIENT-ID
 test-offset     2          40              60              20              -               -               -
 test-offset     1          40              61              21              -               -               -

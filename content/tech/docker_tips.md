@@ -17,7 +17,6 @@ type: posts
 ### Create docker container
 
     docker run -v e:/gohome:/gohome -it --name test ubuntu bash
-    
     docker run -p 8000:8000 -v e:/gohome:/gohome -it --name test ubuntu bash
 
 ### Update linux repository
@@ -31,8 +30,7 @@ type: posts
 
 ### Set profile
 
-    vi ~/.profile && . ~/.profile
-    ---
+    $ vi ~/.profile && . ~/.profile
     alias .pro="vi ~/.profile"
     alias pro=". ~/.profile"
     export GOROOT=/go

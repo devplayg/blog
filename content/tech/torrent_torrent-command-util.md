@@ -1,12 +1,13 @@
 ---
-title: 'Go언어로 토렌트 클라이언트를 실행해보자'
-subtitle: 'Torrent command-line client in Go'
-date: 2019-06-13T13:11:09+09:00
+title: '명령어로 토렌트 다운로드'
+subtitle: 'Download torrents from the command-line in Go'
+date: 2019-06-16T13:11:09+09:00
+type: posts
 categories:
     - util
     - torrent
     - go
-tags
+tags:
     - golang
     - go
     - Go언어
@@ -16,18 +17,19 @@ tags
     - download
     - 토렌트
     - 토렌트 클라이언트
+    - 명령어 토렌트 다운로드
 ---
 
-### 테스트 환경 (Environment)
+### 실행 환경 (Environment)
 
-Ubuntu 18.84
+Ubuntu 18.04
 
-Torrent Library (https://github.com/anacrolix/torrent)
 
 
 ### 소스 다운로드 (Clone the git repository)
 
-    $ go get github.com/anacrolix/torrent
+Torrent Library (https://github.com/anacrolix/torrent)
+
     $ go get github.com/anacrolix/torrent
     $ go get github.com/anacrolix/envpprof
     $ go get github.com/anacrolix/tagflag

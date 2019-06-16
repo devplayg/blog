@@ -1,34 +1,21 @@
 ---
-title: 'mozjpeg을 활용한 jpeg 이미지 압축'
-subtitle: 'Optimizing JPEG image with MozJPEG'
-date: 2019-06-13T17:31:12+09:00
-categories:
-    - library
-    - jpeg
-    - image
-    - compression
-tags
-    - mozilla jpeg
-    - mozjpeg
-    - jpeg
-    - jpeg encoder
-    - 이미지 인코더
-    - compression
-    - 이미지 압축
-    - 사진 압축
-    - 무손실 압축
-    - image lossless
-    - compile
-    - 컴파일
-    - 리눅스
-    - linux
-    - 우분투
-    - ubuntu
+title: 'MozJPEG 를 활용한 JPEG 압축'
+series:
+    - 'MozJPEG 를 활용한 JPEG 압축'
+date: 2019-06-16T14:24:39+09:00
+categories: 
+  - util
+tags: 
+  - jpeg 압축
+  - 이미지 압축
+  - jpeg 크키 줄이기
+  - ubuntu
+type: posts
 ---
 
-### 테스트 설치환경 (Environment)
+### 테스트 환경
 
-Ubuntu 18.04
+Ubuntu 18.04 container on Docker
 
 ### 필수 라이브러리 설치 (Requirements)
 
@@ -46,15 +33,14 @@ Ubuntu 18.04
     $ sudo cmake ../
     $ sudo make install
 
-### 이미지 압축 테스트
+### 이미지 압축 테스트 (Test)
+
+실행방법
 
     $ ./cjpeg-static -outfile [output file]  -optimise [input file]
 
-압축률 미세 조정하기
+압축품질 설정
 
-    $ ./cjpeg-static -outfile /gohome/img/my-image-optimized.jpg  -optimise               /gohome/img/my-image.jpg
-    $ ./cjpeg-static -outfile /gohome/img/my-image-20.jpg         -optimise -quality  20  /gohome/img/my-image.jpg
-    $ ./cjpeg-static -outfile /gohome/img/my-image-40.jpg         -optimise -quality  40  /gohome/img/my-image.jpg
-    $ ./cjpeg-static -outfile /gohome/img/my-image-60.jpg         -optimise -quality  60  /gohome/img/my-image.jpg
-    $ ./cjpeg-static -outfile /gohome/img/my-image-80.jpg         -optimise -quality  80  /gohome/img/my-image.jpg
-    $ ./cjpeg-static -outfile /gohome/img/my-image-100.jpg        -optimise -quality 100  /gohome/img/my-image.jpg
+    $ ./cjpeg-static -outfile my-image-optimized.jpg  -optimise               my-image.jpg
+    $ ./cjpeg-static -outfile my-image-80.jpg         -optimise -quality  80  my-image.jpg
+

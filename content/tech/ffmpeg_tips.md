@@ -19,8 +19,7 @@ A complete, cross-platform solution to record, convert and stream audio and vide
     
 #### list.txt
 
-    cat list.txt
-    ---
+    $ cat list.txt
     /tmp/file1.mp4
     /tmp/file2.mp4
     /tmp/file3.mp4

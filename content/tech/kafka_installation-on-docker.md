@@ -66,14 +66,11 @@ type: posts
 
 #### Zookeeper/Kafka 컨테이너 IP 확인
 
-    docker inspect -f "{{ .NetworkSettings.IPAddress }}" zoo1 zoo2 zoo3
-    --- 
+    $ docker inspect -f "{{ .NetworkSettings.IPAddress }}" zoo1 zoo2 zoo3
     172.17.0.2
     172.17.0.3
     172.17.0.4
-    ---    
-    docker inspect -f "{{ .NetworkSettings.IPAddress }}" kafka1 kafka2 kafka3
-    ---
+    $ docker inspect -f "{{ .NetworkSettings.IPAddress }}" kafka1 kafka2 kafka3
     172.17.0.5
     172.17.0.6
     172.17.0.7
@@ -94,21 +91,19 @@ type: posts
 
 #### Java 버전 확인
 
-    java -version
-    ---
+    $ java -version
     openjdk version "11.0.3" 2019-04-16
     OpenJDK Runtime Environment (build 11.0.3+7-Ubuntu-1ubuntu218.04.1)
     OpenJDK 64-Bit Server VM (build 11.0.3+7-Ubuntu-1ubuntu218.04.1, mixed mode, sharing)
 
 #### Kafka 설치
 
-    curl -sL http://apache.mirror.cdnetworks.com/kafka/2.2.0/kafka_2.12-2.2.0.tgz | tar xvz -C /
-    mv /kafka_2.12-2.2.0/ /kafka
+    $ curl -sL http://apache.mirror.cdnetworks.com/kafka/2.2.0/kafka_2.12-2.2.0.tgz | tar xvz -C /
+    $ mv /kafka_2.12-2.2.0/ /kafka
 
 #### 호스트 파일 설정
 
-    vi /etc/hosts
-    
+    $ vi /etc/hosts
     172.17.0.2      zoo1
     172.17.0.3      zoo2
     172.17.0.4      zoo3
@@ -118,8 +113,7 @@ type: posts
 
 #### 환경변수 설정
 
-    vi ~/.profile && . ~/.profile
-    ---
+    $ vi ~/.profile && . ~/.profile
     export ZOOKEEPER=zoo1:2181,zoo2:2181,zoo3:2181/my-kafka
     export KAFKA=kafka1:9092,kafka2:9092,kafka3:9092
     export KAFKA_HOME=/kafka
@@ -128,8 +122,7 @@ type: posts
 
 #### 환경변수 추가 설정
     
-    vi ~/.profile && . ~/.profile
-    ---
+    $ vi ~/.profile && . ~/.profile
     alias .pro='vi ~/.profile'
     alias pro='. ~/.profile'
     alias kconf='vi $KAFKA_HOME/config/server.properties'
