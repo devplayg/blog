@@ -3,6 +3,7 @@ title: '5. Kafka 테스트'
 series: 
     - 'Docker 환경에서 Kafka 설치'
 date: 2019-06-11T19:55:12+09:00
+lasmod: 2019-06-16T17:14:41+09:00
 categories:
   - distributed platform
   - kafka
