@@ -1,3 +1,3 @@
-# Devplayg.com blog
+# Devplayg.com
 
 Powered by Hugo
