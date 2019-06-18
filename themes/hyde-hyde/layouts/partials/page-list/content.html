@@ -1,4 +1,5 @@
-<span class="section__title">{{ .Title }}</span>
+<div class="section__title">{{ .Title }}</div>
+<iframe src="/search.html" class="google_search_engine"></iframe>
 <ul class="posts">
     {{ with .Data.Pages }}
         {{ partial "posts-list.html" . }}

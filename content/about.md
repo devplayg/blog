@@ -33,7 +33,7 @@ Life without what makes me high
     * Go
     * Perl
     * Shell
-    * Java
+    * Spring Boot 
     * Etc.
 
 |<img src="/img/avatars/linux.png">|<img src="/img/avatars/gopher.png">|<img src="/img/avatars/perl.png">|<img src="/img/avatars/java.png">|
@@ -42,10 +42,10 @@ Life without what makes me high
 
 ### Avatars
 
-|<img src="/img/avatars/wondory_green.png">|<img src="/img/avatars/wondory_green_raggaeface.png">|<img src="/img/avatars/wondory_green_sunglasses.png">|<img src="/img/avatars/wondory_green_raggaehair.png">|
+|<img src="/img/avatars/avatar_green.png">|<img src="/img/avatars/avatar_green_raggaeface.png">|<img src="/img/avatars/avatar_green_sunglasses.png">|<img src="/img/avatars/avatar_green_raggaehair.png">|
 |---|---|---|---|
-|<img src="/img/avatars/wondory_blue.png">|<img src="/img/avatars/wondory_blue_raggaeface.png">|<img src="/img/avatars/wondory_blue_sunglasses.png">||
-|<img src="/img/avatars/wondory_olive.png">|<img src="/img/avatars/wondory_raggaebg.png">|||
+|<img src="/img/avatars/avatar_blue.png">|<img src="/img/avatars/avatar_blue_raggaeface.png">|<img src="/img/avatars/avatar_blue_sunglasses.png">||
+|<img src="/img/avatars/avatar_olive.png">|<img src="/img/avatars/avatar_raggaebg.png">|<img src="/img/avatars/avatar_with_gopher.png">||
 
 
 ### **Life Sayings and Quotes**

@@ -3,6 +3,7 @@
 {{ end }}
 
 {{ define "content" }}
+<iframe src="/search.html" class="google_search_engine"></iframe>
   <div class="post-list">
     {{ $paginator := .Paginate (where .Data.Pages "Type" "posts") }}
     {{ range $paginator.Pages }}
