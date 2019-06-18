@@ -146,12 +146,10 @@ a {
 	}
 }
 
-
 .content {
 	padding-bottom: 2rem;
 	padding-top: 2rem;
 }
-
 
 .google_search_engine {
   height: 40px;
@@ -159,4 +157,9 @@ a {
   padding:0;
   width:100%;
   border: none;
+}
+
+.posts  {
+  margin-block-start: 0em;
+  padding-inline-start: 30px;
 }

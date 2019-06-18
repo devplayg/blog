@@ -20,7 +20,7 @@ Github repo 에 올려봤다. 처음에는 빌드 정도만 되도록 작성된 
 사용법도 잘 정리되어 있고, 훈장 같은 벳지들도 달려있지 않은가!!
 그래서 나도 README.md 파일도 좀 고쳐보고, 벳지도 몇 개 달아봤다.
 
-![DFF](dff.png)
+<img src="dff.png" border="1">
 
 https://github.com/devplayg/dff
 
