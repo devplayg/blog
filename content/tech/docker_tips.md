@@ -1,7 +1,7 @@
 ---
 title: 'Docker Tips'
 date: 2019-06-07T00:28:15+09:00
-lastmod: 2019-06-07T00:28:15+09:00
+lastmod: 2019-06-19T09:43:15+09:00
 categories: 
   - docker
   - ubuntu
@@ -22,7 +22,7 @@ type: posts
 ### Update linux repository
 
     sed -i s#archive\.ubuntu\.com#mirror.kakao.com#g /etc/apt/sources.list
-    apt update && apt install -y vim net-tools inetutils-ping telnet curl
+    apt update && apt install -y vim net-tools inetutils-ping telnet curl git
     
 ### Install Go
 
