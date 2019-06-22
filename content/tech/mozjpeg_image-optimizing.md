@@ -3,6 +3,7 @@ title: 'MozJPEG 를 활용한 JPEG 압축'
 series:
     - 'MozJPEG 를 활용한 JPEG 압축'
 date: 2019-06-16T14:24:39+09:00
+lastmod: 2019-06-23T22:22:39+09:00
 categories: 
   - util
 tags: 
@@ -20,7 +21,7 @@ Ubuntu 18.04 container on Docker
 ### 필수 라이브러리 설치 (Requirements)
 
     $ sudo apt-get update
-    $ sudo apt-get install cmake autoconf automake libtool make pkg-config git nasm
+    $ sudo apt-get install cmake autoconf automake libtool make pkg-config git nasm libpng-dev
 
 ### 소스파일 다운로드 (Download source)
 
@@ -44,3 +45,6 @@ Ubuntu 18.04 container on Docker
     $ ./cjpeg-static -outfile my-image-optimized.jpg  -optimise               my-image.jpg
     $ ./cjpeg-static -outfile my-image-80.jpg         -optimise -quality  80  my-image.jpg
 
+이미지 일괄 압축
+
+    $ find /dir  -type f -name "*.jpg" -exec sh -c " ./cjpeg-static -outfile '{}_' -optimise '{}'; rm -rf '{}'; mv '{}_' '{}'" \;
