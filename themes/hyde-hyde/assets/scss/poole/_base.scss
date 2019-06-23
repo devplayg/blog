@@ -49,10 +49,21 @@ a {
 
 img {
   display: block;
-  border: 1px dashed #777777  ;
+  border: 1px dashed #999999  ;
   max-width: 100%;
   margin: 0 0 1rem;
   border-radius: 5px;
+}
+
+.imgTileContainer {
+  clear:both;
+}
+.imgTile {
+  margin-right: 10px;
+  object-fit: cover;
+  width: 150px;
+  height: 150px;
+  float:left;
 }
 
 table {
