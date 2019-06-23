@@ -1,5 +1,6 @@
 <div class="section__title">{{ .Title }}</div>
 <iframe src="/search.html" class="google_search_engine"></iframe>
+{{.Content}}
 <ul class="posts">
     {{ with .Data.Pages }}
         {{ partial "posts-list.html" . }}
