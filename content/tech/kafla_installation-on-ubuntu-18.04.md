@@ -46,35 +46,14 @@ OpenJDK 설치
 Kafka 를 실행할 사용자("kafka") 생성
 
     $ sudo adduser kafka
-    Adding user `kafka' ...
-    Adding new group `kafka' (1001) ...
-    Adding new user `kafka' (1001) with group `kafka' ...
-    Creating home directory `/home/kafka' ...
-    Copying files from `/etc/skel' ...
-    Enter new UNIX password:
-    Retype new UNIX password:
-    passwd: password updated successfully
-    Changing the user information for kafka
-    Enter the new value, or press ENTER for the default
-            Full Name []: Kafka
-            Room Number []:
-            Work Phone []:
-            Home Phone []:
-            Other []:
-    Is the information correct? [Y/n] y
 
 "kafka" 사용자를 sudo 그룹에 등록
 
     $ sudo adduser kafka sudo
-    Adding user `kafka' to group `sudo' ...
-    Adding user kafka to group sudo
-    Done.
 
 "kafka" 사용자로 로그인
 
     $ su - kafka
-    kafka$ id
-    uid=1001(kafka) gid=1001(kafka) groups=1001(kafka),27(sudo)
 
 ## Step 2 - Kafka 설치
 
@@ -83,7 +62,6 @@ Kafka 를 실행할 사용자("kafka") 생성
     kafka$ curl -sL http://apache.mirror.cdnetworks.com/kafka/2.2.1/kafka_2.12-2.2.1.tgz | tar xvz -C ~
     kafka$ ln -s kafka_2.12-2.2.1/ ~/kafka
     kafka@kafka:~$ ls -l ~
-    drwxrwxr-x 2 kafka kafka 4096 Jun 26 00:50 download
     lrwxrwxrwx 1 kafka kafka   17 Jun 26 00:54 kafka -> kafka_2.12-2.2.1/
     drwxr-xr-x 6 kafka kafka 4096 May 13 16:18 kafka_2.12-2.2.1
 
@@ -101,9 +79,16 @@ Kafka 를 실행할 사용자("kafka") 생성
      advertised.listeners=PLAINTEXT://192.168.0.117:9092
      delete.topic.enable = true
 
-Zookeeper 서비스 등록
 
-    $ sudo vi /etc/systemd/system/zookeeper.service
+## Step 4 - 서비스 등록
+
+Zookeeper 서비스 파일 생성
+
+    ```
+    kafka$ sudo vi /etc/systemd/system/zookeeper.service
+    ```
+
+/etc/systemd/system/zookeeper.service
 
     [Unit]
     Requires=network.target remote-fs.target
@@ -119,9 +104,22 @@ Zookeeper 서비스 등록
     [Install]
     WantedBy=multi-user.target
 
-Kafka 서비스 등록
+Zookeeper 서비스 등록 및 시작
 
-    $ sudo vi  /etc/systemd/system/kafka.service
+    kafka$ sudo systemctl enable zookeeper
+    kafka$ sudo systemctl start zookeeper
+    kafka$ sudo netstat -lntp
+    ..
+    tcp6       0      0 :::2181                 :::*                    LISTEN      15272/java
+    tcp6       0      0 :::40009                :::*                    LISTEN      15272/java (변동 포트)
+
+Kafka 서비스 파일 생성
+
+    ```
+    kafka$ sudo vi /etc/systemd/system/kafka.service
+    ```
+
+/etc/systemd/system/kafka.service
 
     [Unit]
     Requires=zookeeper.service
@@ -137,38 +135,33 @@ Kafka 서비스 등록
     [Install]
     WantedBy=multi-user.target
 
-    $ sudo systemctl enable zookeeper
-    $ sudo systemctl enable kafka
+Kafka 서비스 등록 및 시작
 
-    $ sudo systemctl start zookeeper
-    $ sudo netstat -lntp
+    kafka$ sudo systemctl enable kafka
+    kafka$ sudo systemctl start kafka
+    kafka$ sudo netstat -lntp
     ..
-    tcp6       0      0 :::2181                 :::*                    LISTEN      15272/java
-    tcp6       0      0 :::40009                :::*                    LISTEN      15272/java (변동 포트)
-    ..
-
-    $ sudo systemctl start kafka
     tcp6       0      0 :::9092                 :::*                    LISTEN      15674/java
     tcp6       0      0 :::35253                :::*                    LISTEN      15674/java (변동 포트)
 
-### Step 4 - 테스트
+### Step 5 - 테스트
 
 토픽 생성
 
-    $ ~/kafka/bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic my-topic
+    kafka$ ~/kafka/bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic my-topic
 
 토픽 확인
 
-    $ ~/kafka/bin/kafka-topics.sh --bootstrap-server localhost:9092 --list
+    kafka$ ~/kafka/bin/kafka-topics.sh --bootstrap-server localhost:9092 --list
     my-topic
 
 Consumer 에서 메시지 처리 준비
 
-    $ ~/kafka/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic my-topic --from-beginning
+    kafka$ ~/kafka/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic my-topic --from-beginning
     (대기)
 
 다른 Console 창에서 Producer 에서 메시지 전송
 
-    $ echo "Hello, World" | ~/kafka/bin/kafka-console-producer.sh --broker-list localhost:9092 --topic my-topic
-    $ ~/kafka/bin/kafka-console-producer.sh --broker-list localhost:9092 --topic my-topic
+    kafka$ echo "Hello, World" | ~/kafka/bin/kafka-console-producer.sh --broker-list localhost:9092 --topic my-topic
+    kafka$ ~/kafka/bin/kafka-console-producer.sh --broker-list localhost:9092 --topic my-topic
     (입력)
