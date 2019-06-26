@@ -15,8 +15,7 @@ tags:
 type: posts
 ---
 
-### MozJPEG를 활용한 이미지 압축 테스트 결과
- 
+## 테스트 결과
 
 | 압축 출처(라이브러리) | 용량(Bytes) | 품질(1~100) | 공간절약비율 | 다운로드 링크                                                                     |
 |-----------------------|-----------|-------------|--------------|----------------------------------------------------------------------------|
@@ -43,12 +42,12 @@ type: posts
 라이선스: [BSD-style open source licenses](https://github.com/mozilla/mozjpeg/blob/master/LICENSE.md)
 
 
-### 비교
+## 테스트 결과 이미지
 
-원본
+#### 원본
 
 ![원본](my-image.jpg)
 
-MozJPEG (150 KB, Quality 70
+#### MozJPEG (150 KB, Quality 70)
 
 ![MozJPEG (150 KB, Quality 70)](my-image_cjpeg-70.jpg)

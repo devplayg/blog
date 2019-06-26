@@ -4,6 +4,7 @@ date: 2019-06-16T14:21:11+09:00
 categories:
     - util
     - hugo
+    - tips
 tags:
     - Hugo 링크
     - Hugo link
@@ -12,7 +13,7 @@ tags:
 types: posts
 ---
 
-### 링크와 참조
+### Link
     
     {{</* ref "document.md" */>}}
     {{</* ref "#anchor" */>}}
@@ -24,7 +25,7 @@ types: posts
     {{</* relref "document.md#anchor" */>}}
     
     
-### 블로그 시작
+### Get started
 
     git clone git@github.com:devplayg/blog.git
     cd blog

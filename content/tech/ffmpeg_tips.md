@@ -4,6 +4,7 @@ date: 2019-01-22T00:09:12+09:00
 categories: 
   - util
   - ffmpeg
+  - tips
 tags:
   - tips
   - ffmpeg

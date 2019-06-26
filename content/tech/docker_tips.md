@@ -5,6 +5,7 @@ lastmod: 2019-06-19T09:43:15+09:00
 categories: 
   - docker
   - ubuntu
+  - tips
 tags: 
   - tips
   - virtual machine

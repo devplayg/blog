@@ -34,7 +34,6 @@ pluralizelisttitles = false
     highlightjslanguages = ["go"]
 
 
-
     # please choose either GraphComment or Disqus or Utterances
     #GraphCommentId = "..."
     #UtterancesRepo = "..." # https://utteranc.es/
