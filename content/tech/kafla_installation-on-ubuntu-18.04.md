@@ -138,11 +138,11 @@ tags:
 
 ## Step 5 - 테스트
 
-#### 토픽 생성
+#### Topic 생성
 
     kafka$ ~/kafka/bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic my-topic
 
-#### 토픽 확인
+#### Topic 확인
 
     kafka$ ~/kafka/bin/kafka-topics.sh --bootstrap-server localhost:9092 --list
     my-topic
