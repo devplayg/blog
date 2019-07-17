@@ -21,3 +21,15 @@ Usage example
       </ul>
 
     </div>
+
+
+Locales
+
+        <div th:text="${#locale.country}">US</div>
+        <div th:text="${#locale.displayCountry}">미국</div>
+        <div th:text="${#locale.toLanguageTag()}">en-US</div>
+        <div th:text="${#locale.ISO3Country}">USA</div>
+        <div th:text="${#locale.ISO3Language}">eng</div>
+        <div th:text="${#locale.displayName}">영어 (미국)</div>
+        <div th:text="${#locale.language}">en</div>
+        <div th:text="${#locale.default}">ko_KR</div>
