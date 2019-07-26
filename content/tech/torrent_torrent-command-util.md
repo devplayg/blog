@@ -10,7 +10,6 @@ categories:
 tags:
     - golang
     - go
-    - Go언어
     - torrent
     - torrent client
     - command line

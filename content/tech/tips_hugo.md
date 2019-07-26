@@ -1,16 +1,15 @@
 ---
-title: 'Hugo Tips'
+title: 'Hugo tips'
+types: posts
 date: 2019-06-16T14:21:11+09:00
 categories:
     - util
     - hugo
     - tips
 tags:
-    - Hugo 링크
-    - Hugo link
-    - 블로그
-    - 블로그 hugo
-types: posts
+    - tips
+    - hugo link
+    - blog
 ---
 
 ### Link

@@ -1,25 +1,19 @@
 ---
-title: 'Kafka Tips'
+title: 'Kafka tips'
+type: posts
 date: 2019-06-11T18:55:12+09:00
 lasmod: 2019-06-16T17:14:41+09:00
 categories:
-  - distributed platform
   - kafka
   - tips
 tags:
-  - distributed platform
-  - command
-  - Kafka tips
+  - kafka
   - tips
   - docker
   - kafka
   - zookeeper
   - producer
   - consumer
-  - 카프카
-  - 주키퍼
-  - 카프카 명령어
-type: posts
 ---
 
 ### Create topic

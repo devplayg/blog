@@ -1,18 +1,16 @@
 ---
-title: 'Docker Tips'
+title: 'Docker tips'
+type: posts
 date: 2019-06-07T00:28:15+09:00
 lastmod: 2019-06-19T09:43:15+09:00
 categories: 
   - docker
-  - ubuntu
   - tips
 tags: 
+  - docker
   - tips
   - virtual machine
-  - docker
-  - ubuntu
   - container
-type: posts
 ---
 
 ### Create docker container
@@ -31,13 +29,17 @@ type: posts
 
 ### Set profile
 
-    $ vi ~/.profile && . ~/.profile
-    alias .pro="vi ~/.profile"
-    alias pro=". ~/.profile"
-    export GOROOT=/go
-    export GOPATH=/gohome
-    export PATH=$GOROOT/bin:$GOPATH/bin:$PATH
+```bash
+$ vi ~/.profile && . ~/.profile
+alias .pro="vi ~/.profile"
+alias pro=". ~/.profile"
+export GOROOT=/go
+export GOPATH=/gohome
+export PATH=$GOROOT/bin:$GOPATH/bin:$PATH
+```
     
-### Apache docker
+### Runs in Docker
 
-     docker run -dit --name web -p 8080:80 -v E:/webhome/:/usr/local/apache2/htdocs/ httpd:2.4
+Apache 2.4
+
+    docker run -dit --name web -p 8080:80 -v E:/webhome/:/usr/local/apache2/htdocs/ httpd:2.4

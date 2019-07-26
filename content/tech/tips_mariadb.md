@@ -9,6 +9,7 @@ categories:
 tags: 
   - profiling
   - mariadb
+  - tips
 type: posts
 ---
 

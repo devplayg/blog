@@ -1,5 +1,6 @@
 ---
 title: 'Go 언어'
+type: posts
 date: 2019-06-08T00:10:00+09:00
 lastmod: 2019-06-08T00:10:00+09:00
 categories: 
@@ -11,7 +12,6 @@ tags:
   - Ken Thompson
   - go
   - golang
-type: posts
 ---
 
 ### Go 언어는?

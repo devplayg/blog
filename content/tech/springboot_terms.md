@@ -1,7 +1,8 @@
 ---
 title: 'Spring Boot 용어 - Servlet & Servlet Container'
+type: posts
 date: 2019-06-09T16:11:23+09:00
-lastmod: 2019-06-09T16:11:23+09:00
+lastmod: 2019-07-25T00:00:00+09:00
 categories: 
     - programming language
     - spring framework 
@@ -10,7 +11,6 @@ tags:
     - spring framework
     - spring
     - spring boot
-type: posts
 ---
 
 ### 서블릿(Servlet)
@@ -59,3 +59,15 @@ type: posts
 ### 참고
 
 https://docs.oracle.com/javaee/7/tutorial/servlets001.htm#BNAFE
+
+### PreAuthorize not working on Controller
+
+https://stackoverflow.com/questions/32442408/preauthorize-not-working-on-controller/35759965
+
+A common problem with using PrePost annotations on controllers is that Spring method security is based on Spring AOP, which is by default implemented with JDK proxies.
+That means that it works fine on the service layer which is injected in controller layer as interfaces, but it is ignored on controller layer because controller generally do not implement interfaces.
+The following is just my opinion:
+
+* prefered way: move the pre post annotation on service layer
+* if you cannot (or do not want to), try to have your controller implement an interface containing all the annotated methods
+* as a last way, use proxy-target-class=true

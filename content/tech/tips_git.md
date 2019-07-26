@@ -1,17 +1,15 @@
 ---
 title: 'Git tips'
+type: posts
 date: 2019-06-07T23:45:41+09:00
 lastmod: 2019-06-11T23:45:41+09:00
 categories: 
-    - util
     - git
     - tips
 tags: 
     - git
-    - tip
-type: posts
+    - tips
 ---
-
 
 ### To remove a submodule you need to:
 
