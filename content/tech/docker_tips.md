@@ -37,3 +37,7 @@ type: posts
     export GOROOT=/go
     export GOPATH=/gohome
     export PATH=$GOROOT/bin:$GOPATH/bin:$PATH
+    
+### Apache docker
+
+     docker run -dit --name web -p 8080:80 -v E:/webhome/:/usr/local/apache2/htdocs/ httpd:2.4
