@@ -18,10 +18,14 @@ A complete, cross-platform solution to record, convert and stream audio and vide
 
     ffmpeg -f concat -i list.txt -c copy output.mp4
     
-#### list.txt
+list.txt
 
     $ cat list.txt
     /tmp/file1.mp4
     /tmp/file2.mp4
     /tmp/file3.mp4
     /tmp/file4.mp4
+
+### Download RTSP stream
+
+    ffmpeg -i rtsp://ID:PASSWORD@IP -acodec copy -vcodec copy /path/to/file
