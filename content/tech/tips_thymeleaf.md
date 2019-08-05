@@ -34,3 +34,9 @@ tags:
         <div th:text="${#locale.displayName}">영어 (미국)</div>
         <div th:text="${#locale.language}">en</div>
         <div th:text="${#locale.default}">ko_KR</div>
+
+### Access "Application.yaml"
+
+    ${@environment.getProperty('property.key')}
+    
+    <span th:text="${@environment.getProperty('app.company')}"></span>
