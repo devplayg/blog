@@ -1,8 +1,30 @@
 ---
 title: 'Java, pass-by-value 와 pass-by-reference'
+date: 2019-08-02T01:00:00+09:00
 draft: true
+
 ---
 
+### 샘플 객체
+
+```java
+class Person {
+    String name;
+
+    Person(String name) {
+        this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "name=" + name;
+    }
+}
+```
+
+### Object 전달
+
+```java
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -17,7 +39,6 @@ public class Hello {
                 )
         );
         System.out.println(people); // [name=A, name=B, name=C]
-
 
         updateList(people);
         System.out.println(people); // [name=A, name=B, name=C, name=D]
@@ -40,10 +61,9 @@ public class Hello {
         System.out.println(people); // [name=X, name=Y, name=Z, name=NEW]
     }
 }
+```
 
 
-
-//### 객체 (pass-by-value)
 
 
 //public class Hello {
@@ -86,15 +106,3 @@ public class Hello {
 
 
 
-class Person {
-    String name;
-
-    Person(String name) {
-        this.name = name;
-    }
-
-    @Override
-    public String toString() {
-        return "name="+name;
-    }
-}

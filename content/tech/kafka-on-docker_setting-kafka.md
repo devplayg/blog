@@ -74,4 +74,4 @@ type: posts
 
 각 컨테이너에서 Kafka 시작
 
-    $KAFKA_HOME/bin/kafka-server-start.sh $KAFKA_HOME/config/server.properties
+    $ KAFKA_HOME/bin/kafka-server-start.sh $KAFKA_HOME/config/server.properties

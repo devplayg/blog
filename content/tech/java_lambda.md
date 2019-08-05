@@ -1,7 +1,7 @@
 ---
 title: 'Java Lambda'
-type: posts
 date: 2019-07-25T00:00:00+09:00
+type: posts
 categories: 
     - programming language
     - java

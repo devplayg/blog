@@ -37,6 +37,4 @@ tags:
 
 ### Access "Application.yaml"
 
-    ${@environment.getProperty('property.key')}
-    
     <span th:text="${@environment.getProperty('app.company')}"></span>

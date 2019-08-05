@@ -13,11 +13,11 @@ tags:
   - Java
 ---
 
-# Build
+### Build
 
     gradlew bootjar
     
-# Run jar
+### Run jar
     
     java -jar server-1.0.jar
     java -Dspring.profiles.active=server -jar myApp.jar

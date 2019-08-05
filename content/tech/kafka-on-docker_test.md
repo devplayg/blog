@@ -23,8 +23,8 @@ type: posts
 
 ### Kafka 상태확인 명령어
 
-    $KAFKA_HOME/bin/kafka-topics.sh --bootstrap-server $KAFKA --list
-    $KAFKA_HOME/bin/kafka-topics.sh --bootstrap-server $KAFKA --describe --topic my-topic
+    $ KAFKA_HOME/bin/kafka-topics.sh --bootstrap-server $KAFKA --list
+    $ KAFKA_HOME/bin/kafka-topics.sh --bootstrap-server $KAFKA --describe --topic my-topic
     
 ### Kafka 장애 발생 시, 상태변화 테스트
 
