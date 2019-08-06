@@ -40,5 +40,5 @@ grant all privileges on *.* to 'root'@'%';
 ### Change password
 
 ```sql
-alter user 'root'@'%' identified by 'Uniiot12!@';
+alter user 'root'@'%' identified by 'NEWPASSWORD';
 ```
