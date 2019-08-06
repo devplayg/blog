@@ -29,3 +29,16 @@ truncate table mysql.general_log;
 ```sql
 DATE_ADD(create_date, INTERVAL DATEDIFF(NOW(), create_date) DAY)
 ```
+
+### Add account
+
+```sql
+create user 'root'@'%' identified by 'YOURPASSWORD';
+grant all privileges on *.* to 'root'@'%';
+```
+
+### Change password
+
+```sql
+alter user 'root'@'%' identified by 'Uniiot12!@';
+```
