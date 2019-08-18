@@ -15,7 +15,7 @@ tags:
 
 /etc/netplan/*.yaml
 
-```yaml
+```
 network:
   version: 2
   renderer: networkd
