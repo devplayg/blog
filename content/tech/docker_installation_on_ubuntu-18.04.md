@@ -1,19 +1,19 @@
- ---
- title: 'Installation Docker on Ubuntu 18.04'
- date: 2019-08-19T00:00:00+09:00
- type: posts
- draft: true
- categories:
-     - tips
-     - installation
-     - docker
-     - ubuntu
- tags:
+---
+title: 'Installation Docker on Ubuntu 18.04'
+date: 2019-08-19T00:00:00+09:00
+type: posts
+draft: true
+categories:
     - tips
     - installation
     - docker
     - ubuntu
- ---
+tags:
+    - tips
+    - installation
+    - docker
+    - ubuntu
+---
  
 ### 기존 Docker 삭제 (옵션)
 
@@ -55,4 +55,3 @@ $ sudo add-apt-repository \
 ### Docker 실행 확인
 
     sudo systemctl status docker
-
