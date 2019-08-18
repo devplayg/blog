@@ -9,10 +9,10 @@
      - docker
      - ubuntu
  tags:
-     - tips
-      - installation
-      - docker
-      - ubuntu
+    - tips
+    - installation
+    - docker
+    - ubuntu
  ---
  
 ### 기존 Docker 삭제 (옵션)
