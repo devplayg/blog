@@ -29,3 +29,22 @@ A complete, cross-platform solution to record, convert and stream audio and vide
 ### Download RTSP stream
 
     ffmpeg -i rtsp://ID:PASSWORD@IP -acodec copy -vcodec copy /path/to/file
+
+### To list the supported, connected capture devices:
+
+    ffmpeg -y -f vfwcap -i list
+    
+### Encode video from the camera
+    
+    ffmpeg -f vfwcap -r 15 -i 0 out.mp4
+
+### IP Camera to RTSP Stream
+
+Client (Receiver)
+
+    ffplay -rtsp_flags listen rtsp://localhost:8888/live.sdp?tcp
+
+Server (Sender)
+
+    ffmpeg -f vfwcap -r 15 -i 0 -f rtsp -rtsp_transport tcp rtsp://localhost:8888/live.sdp
+    
