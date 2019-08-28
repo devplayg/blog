@@ -4,13 +4,11 @@ type: posts
 date: 2019-03-18T21:34:36+09:00
 categories: 
   - programming language
-  - bash
   - linux
   - tips
 tags:
   - tips
   - bash
-  - linux
   - current directory
 ---
 
