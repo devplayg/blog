@@ -3,11 +3,12 @@ title: 'Ubuntu 18.04 에 Kafka 설치'
 date: 2019-06-26T13:10:00+09:00
 categories:
     - tech
+    - linux
 tags:
     - kafka
     - java
     - openjdk
-    - ubuntu
+    - ubuntu 18.04
 ---
 
 ## 요구사항

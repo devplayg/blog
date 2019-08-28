@@ -6,11 +6,13 @@ date: 2019-06-16T14:24:39+09:00
 lastmod: 2019-06-23T22:22:39+09:00
 categories: 
   - util
+  - linux
+  - image
 tags: 
   - jpeg 압축
   - 이미지 압축
   - jpeg 크키 줄이기
-  - ubuntu
+  - ubuntu 18.04
 type: posts
 ---
 

@@ -9,7 +9,7 @@ tags:
   - jpeg 압축
   - 이미지 압축
   - jpeg 크키 줄이기
-  - ubuntu
+  - ubuntu 18.04
   - imgpresso
   - imagemagic
 type: posts
