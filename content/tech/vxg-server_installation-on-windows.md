@@ -1,10 +1,11 @@
 ---
-title: 'Windows에 VXG Server 설치'
+title: 'Windows 10, VXG Video Server 설치'
 type: posts
 date: 2019-08-10T15:13:27+09:00
 category:
     - installation
     - docker
+    - VXG
 tags:
     - vxg
     - vxg server

@@ -1,5 +1,5 @@
 ---
-title: 'Ubuntu에 VXG Video Server 설치'
+title: 'Ubuntu 18.04, VXG Video Server 설치'
 type: posts
 date: 2019-08-10T15:13:27+09:00
 category:

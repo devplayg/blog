@@ -11,9 +11,9 @@ tags:
     - ubuntu
 ---
 
-### Configure Static IP Addresses on Ubuntu 18.04 LTS Server
+### 고정IP 설정
 
-/etc/netplan/*.yaml
+    $ vi /etc/netplan/*.yaml
 
 ```
 network:
@@ -27,3 +27,6 @@ network:
       nameservers:
           addresses: [168.126.63.1,8.8.8.8]
 ```
+
+    $ sudo netplan apply
+    
