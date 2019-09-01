@@ -25,7 +25,7 @@ tags:
     
 ### Install Go
 
-    curl https://dl.google.com/go/go1.12.5.linux-amd64.tar.gz | tar xvfz - -C /
+    curl https://dl.google.com/go/go1.12.9.linux-amd64.tar.gz | tar xvfz - -C /
 
 ### Set profile
 
@@ -36,6 +36,7 @@ alias pro=". ~/.profile"
 export GOROOT=/go
 export GOPATH=/gohome
 export PATH=$GOROOT/bin:$GOPATH/bin:$PATH
+export GO111MODULE=on
 ```
     
 ### Runs in Docker
