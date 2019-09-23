@@ -71,5 +71,7 @@ https://downloads.mariadb.org/mariadb/repositories/#mirror=digitalocean-ams
     grant all privileges on facex.* to 'devplayg'@'localhost';
     flush privileges;
     
-        
-        
+### 호스트 이름 변경
+
+    sudo hostnamectl set-hostname dpgserver
+    sudo vi /etc/hosts    
