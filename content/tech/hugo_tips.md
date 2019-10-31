@@ -4,11 +4,10 @@ types: posts
 date: 2019-06-16T14:21:11+09:00
 categories:
     - util
-    - hugo
     - tips
 tags:
-    - tips
     - hugo link
+    - hugo
     - blog
 ---
 

@@ -1,5 +1,13 @@
 ---
 title: "Bootstrap 3.3.7 Template"
+date: 2019-10-31T18:00:00+09:00
+type: posts
+categories:
+    - web
+tags:
+    - template
+    - bootstrap
+    - html
 ---
 
 ```html
@@ -33,13 +41,19 @@ title: "Bootstrap 3.3.7 Template"
         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.26/moment-timezone-with-data.min.js " ></script>
         <script>
             $(function() {
-            
                 $(".btn-test ").click(function(e) {
                     
                 });       
+                
+                $.ajax({
+                  method: "POST",
+                  url: "some.php",
+                  data: { name: "John", location: "Boston" }
+                }).done(function( msg ) {
+                
+                });
             
             });
-            
         </script>
     </body>
 </html>

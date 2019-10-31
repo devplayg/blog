@@ -3,10 +3,11 @@ title: 'Thymeleaf tips'
 type: posts
 date: 2019-07-25T00:00:00+09:00
 categories: 
-  - tips
   - template engine
-tags:
+  - spring boot
+  - template engine
   - tips
+tags:
   - spring boot
   - thymeleaf
 ---

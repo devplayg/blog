@@ -6,8 +6,8 @@ categories:
   - programming language
   - linux
   - tips
+  - command-line
 tags:
-  - tips
   - bash
   - current directory
 ---

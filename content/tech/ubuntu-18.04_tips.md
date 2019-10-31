@@ -3,12 +3,10 @@ title: 'Ubuntu 18.04 tips'
 date: 2019-08-19T00:00:00+09:00
 type: posts
 categories:
-    - tips
     - linux
-    - ubuntu 18.04
+    - tips
 tags:
-    - tips
-    - linux
+    - ubuntu
     - ubuntu 18.04
 ---
 

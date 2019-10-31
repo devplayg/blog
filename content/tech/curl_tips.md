@@ -3,11 +3,13 @@ title: 'CURL tips'
 date: 2019-08-19T00:00:00+09:00
 type: posts
 categories:
-    - tips
-    - CURL
+    - util
+    - command-line
 tags:
-    - tips
     - CURL
+    - post
+    - get
+    
 ---
 
 ### 파일 전송

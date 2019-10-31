@@ -3,11 +3,10 @@ title: 'Git tips'
 date: 2019-06-07T23:45:41+09:00
 lastmod: 2019-06-11T23:45:41+09:00
 categories: 
-    - git
+    - version control
     - tips
 tags: 
     - git
-    - tips
 type: posts
 ---
 

@@ -4,12 +4,10 @@ date: 2019-06-08T15:13:27+09:00
 lastmod: 2019-06-08T15:13:27+09:00
 categories: 
   - database
-  - mariadb
   - tips
 tags: 
   - profiling
   - mariadb
-  - tips
 type: posts
 ---
 
@@ -27,7 +25,7 @@ truncate table mysql.general_log;
 ### Change date to today
 
 ```sql
-DATE_ADD(create_date, INTERVAL DATEDIFF(NOW(), create_date) DAY)
+update table_name set date = DATE_ADD(date, INTERVAL DATEDIFF(NOW(), date) DAY);
 ```
 
 ### Add account
@@ -35,10 +33,12 @@ DATE_ADD(create_date, INTERVAL DATEDIFF(NOW(), create_date) DAY)
 ```sql
 create user 'root'@'%' identified by 'YOURPASSWORD';
 grant all privileges on *.* to 'root'@'%';
+flush privileges;
 ```
 
 ### Change password
 
 ```sql
 alter user 'root'@'%' identified by 'NEWPASSWORD';
+flush privileges;
 ```

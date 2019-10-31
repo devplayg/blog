@@ -4,13 +4,10 @@ date: 2019-08-19T00:00:00+09:00
 type: posts
 draft: true
 categories:
-    - tips
     - installation
     - docker
-    - ubuntu 18.04
+    - linux
 tags:
-    - tips
-    - installation
     - docker
     - ubuntu 18.04
 ---

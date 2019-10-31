@@ -3,11 +3,13 @@ title: 'Openssl, ROOT CA 인증서 생성'
 date: 2019-08-09T00:00:00+09:00
 type: posts
 categories:
-  - openssl
+  - 인증서
   - tips
+  - command-line
 tags:
   - openssl
-  - tips
+  - rsa
+  - 인증서
 ---
 
 ### CA가 사용할 RSA Key 생성

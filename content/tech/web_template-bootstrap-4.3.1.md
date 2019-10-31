@@ -1,6 +1,15 @@
 ---
-
+title: "Bootstrap 4.3.1 Template"
+date: 2019-10-31T18:00:00+09:00
+type: posts
+categories:
+    - web
+tags:
+    - template
+    - bootstrap
+    - html
 ---
+
 ```html
 <!doctype html>
 <html lang="en">

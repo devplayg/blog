@@ -4,13 +4,11 @@ type: posts
 date: 2019-06-11T18:55:12+09:00
 lasmod: 2019-06-16T17:14:41+09:00
 categories:
-  - kafka
+  - messageQ
   - tips
 tags:
   - kafka
-  - tips
   - docker
-  - kafka
   - zookeeper
   - producer
   - consumer

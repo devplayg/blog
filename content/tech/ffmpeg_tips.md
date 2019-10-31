@@ -6,10 +6,8 @@ lastmod: 2019-08-02T00:00:00+09:00
 type: posts
 categories: 
   - util
-  - ffmpeg
-  - tips
+  - command-line
 tags:
-  - tips
   - ffmpeg
 ---
 
