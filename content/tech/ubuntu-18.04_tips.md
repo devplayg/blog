@@ -10,9 +10,17 @@ tags:
     - ubuntu 18.04
 ---
 
-### 고정IP 설정
+### Check network interfaces
 
-    $ vi /etc/netplan/*.yaml
+```
+ls /sys/class/net
+---
+eno1  eno2  lo
+```
+
+### Configuration Static IP
+
+    $ vi /etc/netplan/01-netcfg.yaml
     ---
     network:
       version: 2
@@ -24,10 +32,11 @@ tags:
           gateway4: 192.168.0.1
           nameservers:
               addresses: [168.126.63.1,8.8.8.8]
-
+        eno2:
+          dhcp4: yes
     $ sudo netplan apply
     
-### UFW 설정
+### Configuration UFW 
 
     $ sudo ufw allow OpenSSH
     $ sudo ufw enable
@@ -35,11 +44,11 @@ tags:
     $ sudo ufw allow 50000:50100/tcp
     $ sudo ufw status verbose
 
-### MariaDB 설치
+### Installation MariaDB
 
 https://downloads.mariadb.org/mariadb/repositories/#mirror=digitalocean-ams
 
-피키지 설치
+Install the package
 
     $ sudo apt-get install software-properties-common
     $ sudo apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xF1656F24C74CD1D8
@@ -47,7 +56,7 @@ https://downloads.mariadb.org/mariadb/repositories/#mirror=digitalocean-ams
     $ sudo apt update
     $ sudo apt install mariadb-server
 
-데이터 저장 디렉터리 변경
+Change the data directory
 
     $ sudo service mysql stop
     $ sudo vi /etc/mysql/my.cnf
