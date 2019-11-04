@@ -1,8 +1,9 @@
 ---
-title: Creating Docker container - MariaDB
+title: Creating MariaDB Container
 date: 2019-11-04T09:00:00+09:00
 type: posts
 categories:
+    - database
     - docker
 tags:
     - mariadb
@@ -13,8 +14,9 @@ tags:
     - mysql
 ---
 
+https://hub.docker.com/_/mariadb
 
-### docker-compose.yaml
+### Write "docker-compose.yaml" file
 
 ```yaml
 version: '3'
@@ -34,33 +36,33 @@ services:
     command: ['mysqld', '--character-set-server=utf8mb4', '--collation-server=utf8mb4_unicode_ci']
 ```
 
-### Container 생성
+### Create the container
 
     docker-compose up -d
 
-### 시간대 설정
+### Set timezone
 
 ```
 cat << "EOF" | sudo tee /data/mariadb/conf.d/my.cnf
 [mysqld]
-default-time-zone='+00:00'
+default-time-zone='+09:00'
 EOF
 ```
 
 
-### Container 확인
+### Chech if the container is running
 
     docker ps -a
     ---
     CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                    NAMES
     18b96300f58e        mariadb:10.3        "docker-entrypoint.s…"   10 minutes ago      Up 10 minutes       0.0.0.0:3306->3306/tcp   db
 
-### Container 에 접속
+### Connect to the container and DB
 
     docker exec -it db bash
     mysql
 
-### DB 사용자 조회
+### Search the DB users 
 
 ```sql
 select host, user, password from mysql.user;
@@ -77,7 +79,7 @@ select host, user, password from mysql.user;
 +--------------+------+----------+
 ```
 
-### 사용자 생성
+### Create the DB user
 
 ```sql
 create user 'root'@'%' identified by 'Uniiot12!@';
@@ -86,10 +88,10 @@ flush privileges;
 exit
 ```
 
-### Container 탈출
+### Exit container
 
     exit
 
-### "db" Container 재시작
+### Restart the DB container
 
     docker restart db
