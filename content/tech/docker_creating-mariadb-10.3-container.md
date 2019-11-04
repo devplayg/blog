@@ -40,10 +40,12 @@ services:
 
 ### 시간대 설정
 
-    cat << "EOF" | sudo tee /data/mariadb/conf.d/my.cnf
-    [mysqld]
-    default-time-zone='+00:00'
-    EOF
+```
+cat << "EOF" | sudo tee /data/mariadb/conf.d/my.cnf
+[mysqld]
+default-time-zone='+00:00'
+EOF
+```
 
 
 ### Container 확인
