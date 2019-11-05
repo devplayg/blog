@@ -5,10 +5,10 @@ date: 2019-01-22T00:09:12+09:00
 lastmod: 2019-08-02T00:00:00+09:00
 type: posts
 categories: 
-  - util
-  - command-line
+    - util
+    - command-line
 tags:
-  - ffmpeg
+    - ffmpeg
 ---
 
 A complete, cross-platform solution to record, convert and stream audio and video.
