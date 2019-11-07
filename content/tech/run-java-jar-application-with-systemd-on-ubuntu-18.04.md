@@ -15,7 +15,7 @@ tags:
 
 ### Step1. 서비스 파일 생성
 
-  sudo vi /etc/systemd/system/smartfactory.service
+    sudo vi /etc/systemd/system/smartfactory.service
 
 smartfactory.service
 
@@ -38,14 +38,16 @@ WantedBy=multi-user.target
 Alias=smartfactory.service
 ```
 
+443포트나 80포트를 사용하려면, User와 Group 값을 "root"로 변경한다.
+
 ### 서비스 파일, 실행권한 변경
 
-  chmod 755 smartfactory.service
+    chmod 644 smartfactory.service
 
 ### Systemd 데몬 재시작
 
-  sudo systemctl daemon-reload
+    sudo systemctl daemon-reload
 
 ### 서비스 시작  
 
-  sudo systemctl start smartfactory.service
+    sudo systemctl start smartfactory.service
