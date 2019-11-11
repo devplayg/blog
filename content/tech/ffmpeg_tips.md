@@ -97,3 +97,76 @@ Server (Sender)
 
     ffmpeg -f vfwcap -r 15 -i 0 -f rtsp -rtsp_transport tcp rtsp://localhost:8888/live.sdp
 
+### RTSP 
+
+2초마다 ts파일 생성
+
+    ffmpeg
+        -v error
+        -rtsp_transport tcp
+        -probesize 500k
+        -analyzeduration 1500000
+        -i rtsp://admin:unisem1234@58.72.99.132:30101/Streaming/Channels/101/
+        -map 0:0
+        -flags:v global_header
+        -bsf:v dump_extra
+        -c copy
+        -fflags +igndts
+        -preset veryfast
+        -segment_time 2
+        -segment_wrap 24
+        -f segment live%03d.ts
+
+
+VXG FFMpeg Option
+
+    ffmpeg
+        -v error
+        -rtsp_transport tcp
+        -probesize 500k
+        -analyzeduration 1500000
+        -i rtsp://admin:unisem1234@192.168.0.85:8801/DSMECam1
+        -map 0:0
+        -flags:v global_header
+        -bsf:v dump_extra
+        -c copy
+        -fflags +igndts
+        -f flv rtmp://127.0.0.1:1935/live/u1m2c2_primary?sid=iWHFFEd8jIrC
+
+
+"RTSP-Strean" options
+
+    ffmpeg
+        -y
+        -fflags nobuffer
+        -rtsp_transport tcp
+        -i rtsp://admin:unisem1234@58.72.99.132:30101/Streaming/Channels/101/
+        -vsync 0
+        -copyts
+        -vcodec copy
+        -movflags frag_keyframe+empty_moov
+        -an
+        -hls_flags append_list
+        -f hls
+        -segment_list_flags live
+        -hls_time 1
+        -hls_list_size 3
+        -hls_segment_filename ./videos/a8002e0a-5453-442f-8f34-b17dd49b213f/%d.ts ./videos/a8002e0a-5453-442f-8f34-b17dd49b213f/index.m3u8
+
+Streaming MP4 to RTMP
+
+    ffmpeg
+        -re
+        -i sample.mp4
+        -c copy
+        -f flv rtmp://localhost/movie
+
+
+Streaming RTSP to RTMP
+
+    ffmpeg
+        -re
+        -rtsp_transport tcp
+        -i rtsp://admin:unisem1234@58.72.99.132:30101/Streaming/Channels/101/
+        -c copy
+        -f flv rtmp://localhost/movie
