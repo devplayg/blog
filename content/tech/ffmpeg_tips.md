@@ -125,7 +125,7 @@ VXG FFMpeg Option
         -rtsp_transport tcp
         -probesize 500k
         -analyzeduration 1500000
-        -i rtsp://admin:unisem1234@192.168.0.85:8801/DSMECam1
+        -i rtsp://URL
         -map 0:0
         -flags:v global_header
         -bsf:v dump_extra
