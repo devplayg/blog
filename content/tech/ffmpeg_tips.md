@@ -106,7 +106,7 @@ Server (Sender)
         -rtsp_transport tcp
         -probesize 500k
         -analyzeduration 1500000
-        -i rtsp://admin:unisem1234@58.72.99.132:30101/Streaming/Channels/101/
+        -i rtsp://URL
         -map 0:0
         -flags:v global_header
         -bsf:v dump_extra
@@ -131,7 +131,7 @@ VXG FFMpeg Option
         -bsf:v dump_extra
         -c copy
         -fflags +igndts
-        -f flv rtmp://127.0.0.1:1935/live/u1m2c2_primary?sid=iWHFFEd8jIrC
+        -f flv rtmp://URL
 
 
 "RTSP-Strean" options
@@ -140,7 +140,7 @@ VXG FFMpeg Option
         -y
         -fflags nobuffer
         -rtsp_transport tcp
-        -i rtsp://admin:unisem1234@58.72.99.132:30101/Streaming/Channels/101/
+        -i rtsp://URL
         -vsync 0
         -copyts
         -vcodec copy
@@ -167,6 +167,6 @@ Streaming RTSP to RTMP
     ffmpeg
         -re
         -rtsp_transport tcp
-        -i rtsp://admin:unisem1234@58.72.99.132:30101/Streaming/Channels/101/
+        -i rtsp://URL
         -c copy
         -f flv rtmp://localhost/movie
