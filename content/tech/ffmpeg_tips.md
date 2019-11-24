@@ -17,10 +17,10 @@ A complete, cross-platform solution to record, convert and stream audio and vide
 ### Concatenating video files
 
     $ cat list.txt
-    /tmp/file1.mp4
-    /tmp/file2.mp4
-    /tmp/file3.mp4
-    /tmp/file4.mp4
+    file /tmp/file1.mp4
+    file /tmp/file2.mp4
+    file /tmp/file3.mp4
+    file /tmp/file4.mp4
     
     $ ffmpeg -f concat -i list.txt -c copy output.mp4
     
