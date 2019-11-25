@@ -170,3 +170,11 @@ Streaming RTSP to RTMP
         -i rtsp://URL
         -c copy
         -f flv rtmp://localhost/movie
+
+
+
+# Live *.ts files to record *.ts files and m3u8
+
+    cp /data/live/1/live9???.ts .
+    find . -type f -name "live*.ts" | sort | awk -F/ '{print "file " $2}'> list.txt
+    ffmpeg -f concat -i list.txt -c copy  -f ssegment -segment_list index.m3u8 -segment_list_flags +live -segment_time 60 out%03d.ts
