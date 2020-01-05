@@ -23,3 +23,31 @@ type: posts
 ### Find and restore a deleted file in a Git repository
     
     git ls-files -d | xargs git checkout --
+
+
+### Local branches
+
+	git branch
+
+### Remote branches
+
+	git branch -r
+
+### Sync branches with remote's it
+
+	git fetch --all --prune
+	git remote prune origin
+
+### Delete the branch
+
+	git branch -d <branch_name>
+
+### Delete remote Branch
+
+	git push origin --delete <branch_name>
+	git push origin :<branch_name>
+
+### Virtual run
+
+	--dry-run
+
