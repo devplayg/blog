@@ -1,16 +1,67 @@
 ---
 title: 'Git tips'
 date: 2019-06-07T23:45:41+09:00
-lastmod: 2019-06-11T23:45:41+09:00
+lastmod: 2020-02-02T23:45:41+09:00
 categories: 
     - version control
     - tips
 tags: 
     - git
+    - tag
+    - branch
+    - version
 type: posts
 ---
 
-### To remove a submodule you need to:
+## Find and restore a deleted file in a Git repository
+
+Find     
+
+    git ls-files -d 
+
+Restore
+
+    git checkout <filename>
+
+Find & restore
+    
+    git ls-files -d | xargs git checkout --
+    
+
+## Branch
+
+Clone branch
+
+    git clone -b <branch> <repo>
+    git clone -b test_branch  https://github.com/devplayg/himma
+    
+List local branches
+
+	git branch
+
+List Remote branches
+
+	git branch -r
+
+Sync branches with remote's it
+
+	git fetch --all --prune
+	git remote prune origin
+
+Delete the branch
+
+	git branch -d <branch_name>
+
+Delete remote Branch
+
+	git push origin --delete <branch_name>
+	git push origin :<branch_name>
+
+Virtual run
+
+	--dry-run
+
+To remove a submodule you need to:
 
 - Delete the relevant section from the .gitmodules file.
 - Stage the .gitmodules changes git add .gitmodules
@@ -19,35 +70,3 @@ type: posts
 - Run rm -rf .git/modules/path_to_submodule (no trailing slash).
 - Commit git commit -m "Removed submodule "
 - Delete the now untracked submodule files rm -rf path_to_submodule
-
-### Find and restore a deleted file in a Git repository
-    
-    git ls-files -d | xargs git checkout --
-
-
-### Local branches
-
-	git branch
-
-### Remote branches
-
-	git branch -r
-
-### Sync branches with remote's it
-
-	git fetch --all --prune
-	git remote prune origin
-
-### Delete the branch
-
-	git branch -d <branch_name>
-
-### Delete remote Branch
-
-	git push origin --delete <branch_name>
-	git push origin :<branch_name>
-
-### Virtual run
-
-	--dry-run
-
