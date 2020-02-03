@@ -32,8 +32,9 @@ Find & restore
 
 Clone branch
 
-    git clone -b <branch> <repo>
-    git clone -b test_branch  https://github.com/devplayg/himma
+    git clone -b <branch> <repo> [<dir>]
+    git clone -b test_branch https://github.com/devplayg/himma
+    git clone -b test_branch https://github.com/devplayg/himma himma_branch
     
 List local branches
 
