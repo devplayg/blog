@@ -14,11 +14,16 @@ tags:
   - Java
 ---
 
-### Build
+### Building
 
     gradlew bootjar
     
-### Run jar
-    
-    java -jar server-1.0.jar
-    java -Dspring.profiles.active=server -jar myApp.jar
+### Running
+
+Normal
+
+    java -jar client.jar
+
+Profile: dev
+
+    java -Dspring.profiles.active=dev -jar client.jar
