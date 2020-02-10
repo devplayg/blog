@@ -27,3 +27,25 @@ Normal
 Profile: dev
 
     java -Dspring.profiles.active=dev -jar client.jar
+
+### Systemd script
+
+```ini
+[Unit]
+Description=My client
+After=syslog.target network.target mysql.service
+
+[Service]
+Type=simple
+User=devplayg
+Group=devplayg
+WorkingDirectory=/home/devplayg/client
+ExecStart=/usr/local/jdk/bin/java -Xms128m -Xmx256m -jar smartfactory.jar
+SuccessExitStatus=143
+Restart=on-failure
+RestartSec=60
+
+[Install]
+WantedBy=multi-user.target
+Alias=smartfactory.service
+```
