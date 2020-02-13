@@ -82,3 +82,14 @@ Change the data directory
 
     sudo hostnamectl set-hostname dpgserver
     sudo vi /etc/hosts    
+
+
+### UFW
+
+    sudo ufw allow from 10.10.10.10 to any port 22
+    
+    sudo ufw enable
+    
+### xrdp
+
+https://corona-world.tistory.com/26
