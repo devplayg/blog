@@ -18,6 +18,8 @@ tags:
 
 안정적고 강력한 소프트웨어를 쉽게 만들 수 있는 오픈소스 프로그래밍 언어   
 
+"Go is an open source programming language that makes it easy to build simple, reliable, and efficient software."
+
 * 2007년에 [Google](https://google.com)은 Go의 디자인을 시작했고, 2009년에 공식적으로 공개함
 * 초기 디자인부터 멀티코어, 네트워킹, 그리고 대형시스템에서 효율적으로 실행되도록 설계됨
 * 정적 타이핑, 정적 런타임, 컴파일 언어임 
@@ -82,3 +84,13 @@ Go was publicly announced in November 2009,[29] and version 1.0 was released in 
     enables flexible and modular program construction. Go compiles quickly to machine code yet has
     the convenience of garbage collection and the power of run-time reflection. It's a fast,
     statically typed, compiled language that feels like a dynamically typed, interpreted language.
+
+
+## 철학
+
+- Errors are values
+- Goroutine & Chan
+- Multiple results
+- Do not communicate by sharing memory; instead, share memory by communicating.
+- “static” binaries
+- "http" package
