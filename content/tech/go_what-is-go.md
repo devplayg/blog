@@ -46,3 +46,39 @@ tags:
 * Unix 개발함
 * C언어 를 개발함
 * UTF-8 을 
+
+
+
+* Go 언어란?
+
+Google이 개발한 프로그래밍 언어
+
+- Go 또는 Golang 이라고 불림
+- 2007년에 세 사람이 최초 설계 시작
+- 2009년 12
+
+20060102 15:04:05
+
+Go was publicly announced in November 2009,[29] and version 1.0 was released in March 2012
+
+* 왜 디자인 했나
+
+멀티코어/네트워크/대량코드 환경에서 프로그래밍 생산성을 높이기 위해
+
+- 정적 타이핑 (Static typing and run-time efficiency)
+- 높은 가독성 / 가용성 (Readability and usability)
+- 고성능 네트워킹 / 멀티 프로세싱 (High-performance networking and multiprocessing)
+
+
+* 배경
+
+ 2009년 11월에 구글에서 처음 발표된 후 2012년 3월에 정식 발표된 프로그래밍 언어.
+
+
+ The Go programming language is an open source project to make programmers more productive.
+
+    Go is expressive, concise, clean, and efficient. Its concurrency mechanisms make it easy to write
+    programs that get the most out of multicore and networked machines, while its novel type system
+    enables flexible and modular program construction. Go compiles quickly to machine code yet has
+    the convenience of garbage collection and the power of run-time reflection. It's a fast,
+    statically typed, compiled language that feels like a dynamically typed, interpreted language.
