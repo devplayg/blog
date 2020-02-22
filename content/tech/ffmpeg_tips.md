@@ -26,6 +26,10 @@ A complete, cross-platform solution to record, convert and stream audio and vide
     file /tmp/file3.mp4
     file /tmp/file4.mp4
     
+### Listing splite files and merging all files
+
+     ls -v *.mp4  | awk '{print "file "$1}' > list.txt && ffmpeg -f concat -i list.txt -c copy output.mp4
+    
 ### Cutting video
     
 00:00:00 ~ 00:00:05    
