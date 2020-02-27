@@ -13,10 +13,9 @@ Install GUI version
 
 RTSP Viewer
 
-	RTSP_PATH=rtsp://admin:unisem1234@58.72.99.132:30101/Streaming/Channels/101/
+	RTSP_PATH=rtsp://id:pwd@1.1.1.1:3000/Streaming/Channels/101/
 
 	gst-launch-1.0 rtspsrc location="$RTSP_PATH" latency=500 ! rtph264depay ! h264parse ! nvv4l2decoder enable-max-performance=1 ! nvoverlaysink overlay-x=800 overlay-y=50 overlay-w=640 overlay-h=480 overlay=2
-
 
 cnxsoft@Jetson-Nano:~$ uname -a
 Linux Jetson-Nano 4.9.140-tegra #1 SMP PREEMPT Tue Nov 5 13:43:53 PST 2019 aarch64 aarch64 aarch64 GNU/Linux
