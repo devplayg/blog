@@ -4,7 +4,6 @@ date: 2019-08-09T00:00:00+09:00
 type: posts
 categories:
   - 인증서
-  - tips
   - command-line
 tags:
   - openssl

@@ -49,7 +49,7 @@ Sync branches with remote's it
 	git fetch --all --prune
 	git remote prune origin
 
-Delete the branch
+Delete branch
 
 	git branch -d <branch_name>
 

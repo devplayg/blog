@@ -6,10 +6,8 @@ series:
     - Docker
 categories: 
   - docker
-  - tips
 tags: 
   - docker
-  - apache
   - apache 2.4
   - web server
 ---

@@ -1,6 +1,8 @@
 ---
 title: 'Installation Docker on Ubuntu 18.04'
 date: 2019-08-19T00:00:00+09:00
+series:
+    - Docker
 type: posts
 draft: true
 categories:

@@ -6,7 +6,6 @@ series:
     - Docker
 categories: 
   - docker
-  - tips
 tags: 
   - docker
   - mariadb 10.3

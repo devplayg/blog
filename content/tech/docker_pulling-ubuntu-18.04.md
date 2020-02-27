@@ -6,7 +6,6 @@ series:
     - Docker
 categories: 
   - docker
-  - tips
 tags: 
   - docker
   - ubuntu 18.04
