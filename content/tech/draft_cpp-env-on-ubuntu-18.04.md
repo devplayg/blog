@@ -1,3 +1,8 @@
+---
+title: C++ environment on Linux
+draft: true
+---
+
 docker run -it -v e:/cpphome:/cpphome -p 22:22 --name cpp ubuntu:18.04 bash
 
 sed -i s#archive\.ubuntu\.com#mirror.kakao.com#g /etc/apt/sources.list
