@@ -42,6 +42,7 @@ Life without what makes me high
 
 ### Avatars
 
+
 |<img src="/img/avatars/avatar_green.png">|<img src="/img/avatars/avatar_green_raggaeface.png">|<img src="/img/avatars/avatar_green_sunglasses.png">|<img src="/img/avatars/avatar_green_raggaehair.png">|
 |---|---|---|---|
 |<img src="/img/avatars/avatar_blue.png">|<img src="/img/avatars/avatar_blue_raggaeface.png">|<img src="/img/avatars/avatar_blue_sunglasses.png">||
@@ -49,6 +50,10 @@ Life without what makes me high
 
 
 ### **Life Sayings and Quotes**
+
+Golang, Little Miss Sunshine, If I could make the world dance, 
+One band one sound, No woman no cry, 
+
 
 Rob pike
 
