@@ -40,6 +40,13 @@ network:
 Restart network
 
     sudo netplan apply
+    
+### Sudoers file, enable NOPASSWD for user, all commands
+
+    sudo visudo -f /etc/sudoers.d/myOverrides 
+    ---
+    your_username  ALL=NOPASSWD: ALL
+
 
 ### UFW 
 
