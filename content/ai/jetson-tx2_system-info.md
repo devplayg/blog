@@ -15,7 +15,10 @@ tags:
 
 System info
 
-    $ uname -a
+```coffeescript
+$ uname -a
+Linux unisem-desktop 4.9.140-tegra #1 SMP PREEMPT Mon Dec 9 22:52:02 PST 2019 aarch64 aarch64 aarch64 GNU/Linux
+```
 
 OS
 
