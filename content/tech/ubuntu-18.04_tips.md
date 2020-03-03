@@ -12,9 +12,8 @@ tags:
 
 ### Check network interfaces
 
-```
-ls /sys/class/net
----
+```sh
+$ ls /sys/class/net
 eno1  eno2  lo
 ```
 
@@ -39,13 +38,12 @@ network:
 
 Restart network
 
-    sudo netplan apply
+    $ sudo netplan apply
     
 ### Sudoers file, enable NOPASSWD for user, all commands
 
-    sudo visudo -f /etc/sudoers.d/myOverrides 
-    ---
-    your_username  ALL=NOPASSWD: ALL
+    $ sudo visudo -f /etc/sudoers.d/myOverrides 
+    YOUR_USERNAME  ALL=NOPASSWD: ALL
 
 
 ### UFW 

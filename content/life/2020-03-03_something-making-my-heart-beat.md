@@ -1,9 +1,14 @@
 ---
-title: Some stuff making me high
+title: Something making my heart beat
+date: 2020-03-03T00:00:00+09:00
+type: posts
+categories:
+    - life
+tags:
+    - heartbeat
 ---
 
-
-## Movies
+## Movies I can watch again and again
 
 - Little Miss Sunshine
 - Samurai Champloo
@@ -14,6 +19,15 @@ title: Some stuff making me high
 - 응답하라 1988
 - American Gangster
 - Gladiator
+- Love Actually
+- Indiana Jones
+
+## Actors
+
+- Denzel Washington
+- Russell Crowe
+- 오나라
+- 오정세
 
 ## Music
 
@@ -77,3 +91,11 @@ title: Some stuff making me high
 - 윈디시티 - Elnino Prodigo
 - 윤종신 - 이층집 소녀
 - 제이레빗 - 바람이 불어 오면
+- Dok2 - 말조심
+- Dok2 - Wattup
+- 쇼미더머니 777 - Save (Feat. 팔로알토)(Prod. 코드 쿤스트)
+- 쇼미더머니 777 - XXL (Feat. 딥플로우, Dok2)
+- 쇼미더머니 777 - 선빵 (Feat. 개코, 기리보이) (Prod. 기리보이)
+- 신승훈, 비와이 - Lullaby
+- 코드쿤스트 - Lounge (Feat. 화지)
+- 이하이 - 1,2,3,4

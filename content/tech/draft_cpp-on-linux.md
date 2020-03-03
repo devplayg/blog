@@ -1,30 +1,40 @@
 ---
 title: Compiling C++ on Linux
+date: 2020-03-03T00:00:00+09:00
+type: posts
+tags:
+    - c++
+    - linux
+categories:
+    - programming language
 ---
 
-Check `GLIBC` version on Linux system
+## Checking `GLIBC` version on Linux system
 
-Hello World
 
 ```bash
 $ ldd --version
 ldd (Ubuntu GLIBC 2.27-3ubuntu1) 2.27
 ```
 
+## Hello World
 
-Hello World with Namespace
+hello.cpp
 
-```c++
+```cpp
 #include <iostream>
 
 int main() {
     std::cout << "Hello World\n";
 }
 ```
-```bash
+
+```cpp
 $ g++ -o hello hello.cpp && ./hello
 Hello World
 ```
+
+Hello World with namespace
 
 ```c++
 #include <iostream>

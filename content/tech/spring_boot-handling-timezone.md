@@ -9,6 +9,11 @@ tags:
     - Spring Boot
 ---
 
+`LocalDateTime` vs `ZonedDateTime`
+
+* LocalDateTime: Time based on system timezone
+* ZonedDateTime: Time based on system or user-defined timezone
+
 ```java
 LocalDateTime.now();                                 // 2020-03-02T06:48:56.623993
 ZonedDateTime.now();                                 // 2020-03-02T06:48:56.616338Z[Etc/UTC]
@@ -18,10 +23,9 @@ ZonedDateTime.now(memberZone);                       // 2020-03-02T15:48:56.6223
 LocalDateTime.now(memberZone);                       // 2020-03-02T15:48:56.625316
 ```
 
-* LocalDateTime: Time based on systemt timezone
-* ZonedDateTime: Time based on system or user-defined timezone
+- memberZone = Asia/Seoul
+- System = UTC
 
 
 <img src="timezone.png">
 
-JPA를 사용하다 보니, 시간변환에 대한 정리가 필요하여 작성했다.
