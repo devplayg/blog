@@ -20,7 +20,12 @@ System info
 
 OS
 
-    $ cat /etc/lsb-release 
+    $ cat /etc/lsb-release
+    DISTRIB_ID=Ubuntu
+    DISTRIB_RELEASE=18.04
+    DISTRIB_CODENAME=bionic
+    DISTRIB_DESCRIPTION="Ubuntu 18.04.3 LTS"
+
 
 Memory
 
