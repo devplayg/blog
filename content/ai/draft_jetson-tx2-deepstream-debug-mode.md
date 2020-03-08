@@ -6,11 +6,14 @@ categories:
 tags:
   - nvidia
   - jetson tx2
+  - deepstream
+  - deepstream debug  
 ---
 
 Enter this command 
 
-  $ deepstream-app -c <config> --gst-debug=<debug#>
+    $ deepstream-app -c <config> --gst-debug=<debug#>
   
-- <config> is the pathname of the configuration file
-- <debug#> is a number specifying the amount of detail in the debugging output
+
+- &lt;config&gt; is the pathname of the configuration file
+- &lt;debug#&gt; is a number specifying the amount of detail in the debugging output
