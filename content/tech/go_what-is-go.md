@@ -94,3 +94,13 @@ Go was publicly announced in November 2009,[29] and version 1.0 was released in 
 - Do not communicate by sharing memory; instead, share memory by communicating.
 - “static” binaries
 - "http" package
+
+## 개발 언어, 그리고 선택
+
+선택은 개발자의 몫?
+선택은 상사의 몫?
+생산성 = 경쟁력
+
+Rob Pike and Ken Thompson: 
+
+- UNIX, Plan9, UTF-8, Golang.
