@@ -52,3 +52,14 @@ aes256
 
 minio
 kafka
+
+
+
+Sarang & Univ2
+HUFS
+Isha352
+HandySoft
+
+Wins
+Unisem
+SanSoo Family
