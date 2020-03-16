@@ -94,7 +94,7 @@ Go was publicly announced in November 2009,[29] and version 1.0 was released in 
 - Embedded HTTP client and server
 - defer defers 
  Goroutine & Chan
-
+- benchmark & test
 
 - “static” binaries
 - "http" package
