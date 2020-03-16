@@ -86,12 +86,16 @@ Go was publicly announced in November 2009,[29] and version 1.0 was released in 
     statically typed, compiled language that feels like a dynamically typed, interpreted language.
 
 
-## 철학
+## philosophy
 
-- Errors are values
-- Goroutine & Chan
-- Multiple results
 - Do not communicate by sharing memory; instead, share memory by communicating.
+- errors are values
+- Multiple results
+- Embedded HTTP client and server
+- defer defers 
+ Goroutine & Chan
+
+
 - “static” binaries
 - "http" package
 
