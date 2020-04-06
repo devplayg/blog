@@ -3,10 +3,10 @@ title: 'CURL tips'
 date: 2019-08-19T00:00:00+09:00
 type: posts
 categories:
-    - util
-    - command-line
+    - tips
 tags:
     - CURL
+    - tips
     - post
     - get
     
