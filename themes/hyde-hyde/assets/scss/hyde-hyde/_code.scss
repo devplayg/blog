@@ -52,8 +52,15 @@ code {
 .hljs {
 	font-family: $code-font-family;
 	font-size: $code-fence-font-size;
-	line-height: $root-line-height;
+	line-height: 1.4em;
 	white-space: pre;
 	border: 1px solid $gray-3;
 	border-radius: 4px;
+  padding: 12px;
+  margin-bottom: 16px;
+  //overflow: auto;
+  //font-size: 85%;
+  //line-height: 1.45;
+  //background-color: #f6f8fa;
+  //border-radius: 3px;
 }

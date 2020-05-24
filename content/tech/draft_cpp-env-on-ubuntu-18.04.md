@@ -46,9 +46,9 @@ filetype plugin indent on
 
 ## Update `cmake`
 
- wget https://github.com/Kitware/CMake/releases/download/v3.16.4/cmake-3.16.4.tar.gz
- tar xvfz cmake-3.16.4.tar.gz
- ll
- cd cmake-3.16.4
- ll
- ./bootstrap && make && make install
+wget https://github.com/Kitware/CMake/releases/download/v3.16.4/cmake-3.16.4.tar.gz
+tar xvfz cmake-3.16.4.tar.gz
+ll
+cd cmake-3.16.4
+ll
+./bootstrap && make && make install

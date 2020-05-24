@@ -1,15 +1,10 @@
 ---
-title: 'Developer Playground'
+title: devplayg
 date: 2019-03-18T21:34:36+09:00
 categories:
     - about
 tags : 
-    - devplayg
-    - playground
-    - have fun
-    - Bob Marley
-    - Rob Pike
-    - Little Miss Sunshine 
+    - 누구냐넌
 type: posts
 ---
 
