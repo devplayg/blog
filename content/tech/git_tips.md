@@ -13,6 +13,16 @@ tags:
 type: posts
 ---
 
+## Global account
+
+    $ git config --global user.name "devplayg"
+    $ git config --global user.email "devplayg@gmail.com" 
+
+## Local account
+
+    $ git config --local user.name "devplayg"
+    $ git config --local user.email "devplayg@example.com 
+
 ## Find and restore a deleted file in a Git repository
 
 Find     
