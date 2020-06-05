@@ -19,19 +19,19 @@ tags:
 in general
 
 ```
-docker run -it --name cos centos:6.10 bash
+$ docker run -it --name c6 centos:6.10 bash
 ```
     
 with sharing filesystem
 
 ```     
-docker run -it -v /host/dir:/container/dir --name cos centos:6.10 bash
+$ docker run -it -v /host/dir:/container/dir --name c6 centos:6.10 bash
 ```   
 
 with binding container ports to the host
 
 ```        
-docker run -p 8000:80 -it --name cos centos:6.10 bash
+$ docker run -p 8000:80 -it --name c6 centos:6.10 bash
 ```
 
 - 8000: Host port
@@ -41,13 +41,13 @@ docker run -p 8000:80 -it --name cos centos:6.10 bash
 ## *My favorite*
     
 ```
-docker run -it -v e:/gohome:/gohome --name cos centos:6.10 bash
+$ docker run -it -v e:/gohome:/gohome -p 8000:8000 --name c6 centos:6.10 bash
 ```
 
 - change repository and update
 
 ```ini
-echo '[base]
+$ echo '[base]
 name=CentOS-$releasever - Base
 baseurl=http://mirror.kakao.com/centos/$releasever/os/$basearch/
 gpgcheck=0 
@@ -59,22 +59,22 @@ gpgcheck=0
 name=CentOS-$releasever - Extras
 baseurl=http://mirror.kakao.com/centos/$releasever/extras/$basearch/
 gpgcheck=0' > /etc/yum.repos.d/kakao.repo
-yum repolist
+$ yum repolist
 ```
 
 - install Go
 
 ```
-curl https://dl.google.com/go/go1.13.7.linux-amd64.tar.gz | tar xvfz - -C /
+$ curl https://dl.google.com/go/go1.13.12.linux-amd64.tar.gz | tar xvfz - -C /
 ```
 
 - set profile
 
 ```bash
-vi ~/.bash_profile && . ~/.bash_profile
+$ vi ~/.bash_profile && . ~/.bash_profile
 ```
 
-    - ~/.bash_profile
+- ~/.bash_profile
 
 ```bash
 alias .pro="vi ~/.bash_profile"
@@ -83,4 +83,10 @@ alias dev="cd /gohome/src/github.com/devplayg"
 export GOROOT=/go
 export GOPATH=/gohome
 export PATH=$GOROOT/bin:$GOPATH/bin:$PATH
+```
+
+- install mandatory packages
+
+```
+$ yum -y install git
 ```
