@@ -44,7 +44,7 @@ services:
       - /data/mariadb/datadir:/var/lib/mysql
       - /data/mariadb/conf.d:/etc/mysql/conf.d
     environment:
-      - MYSQL_ROOT_PASSWORD=root12!@
+      - MYSQL_ROOT_PASSWORD=devplayg12!@
       - MYSQL_DATABASE=devplayg
       - MYSQL_USER=devplayg
       - MYSQL_PASSWORD=devplayg12!@

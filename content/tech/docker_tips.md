@@ -12,16 +12,22 @@ tags:
   - docker
 ---
 
-### Docker 정보
+### Commands
     
     docker info
-
-
-### Docker 로그 보기
-    
     docker logs [name]
-    
-    
-### Docker 컨테이너 접속
-
     docker exec -it [name] bash 
+
+### My favorites on Windows
+
+Ubuntu 18.04
+
+    docker run -dit --name ubt -v e:/gohome:/gohome ubuntu:18.04 bash
+    
+Redis
+
+    docker run -dit -p 6379:6379 --name redis -v e:/data/redis:/data redis
+    
+Apache HTTP
+
+    docker run -dit -p 8080:80 --name web -v e:/webhome/:/usr/local/apache2/htdocs/ httpd:2.4

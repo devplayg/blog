@@ -13,17 +13,31 @@ tags:
 type: posts
 ---
 
-## Global account
+### Adding submodules
+
+    git clone git@github.com:YOUR_GIT_ID/parent.git
+    
+    cd parent
+    git submodule add git@github.com:YOUR_GIT_ID/child.git child
+    git commit -m "submodule is added."
+    git push
+    
+### Updating submodule on parent
+
+    git submodule init
+    git submodule update
+
+### Global account
 
     $ git config --global user.name "devplayg"
     $ git config --global user.email "devplayg@gmail.com" 
 
-## Local account
+### Local account
 
     $ git config --local user.name "devplayg"
     $ git config --local user.email "devplayg@example.com 
 
-## Find and restore a deleted file in a Git repository
+### Find and restore a deleted file in a Git repository
 
 Find     
 
@@ -38,7 +52,7 @@ Find & restore
     git ls-files -d | xargs git checkout --
     
 
-## Branch
+### Branch
 
 Clone branch
 
