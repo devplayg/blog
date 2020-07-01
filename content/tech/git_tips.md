@@ -13,6 +13,10 @@ tags:
 type: posts
 ---
 
+### Get repository status
+
+    git remote show origin
+
 ### Adding submodules
 
     git clone git@github.com:YOUR_GIT_ID/parent.git
