@@ -28,7 +28,7 @@ truncate table mysql.general_log;
 update table_name set date = DATE_ADD(date, INTERVAL DATEDIFF(NOW(), date) DAY);
 ```
 
-### Add account
+### Create account
 
 ```sql
 create user 'root'@'%' identified by 'YOURPASSWORD';
@@ -42,6 +42,10 @@ flush privileges;
 alter user 'root'@'%' identified by 'NEWPASSWORD';
 flush privileges;
 ```
+
+### Dump tables only
+
+    mysqldump -u root --skip-add-drop-table -d -B -p aptxsm > aptxsm.tables.sql
 
 ### Installation MariaDB on Ubuntu 18.04
 
