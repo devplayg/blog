@@ -79,7 +79,7 @@ select host, user, password from mysql.user;
 - add another user
 
 ```sql
-create user 'whattup'@'%' identified by 'whattup12!@';
-grant all privileges on devplayg.* to 'whattup'@'%';
+create user 'devplayg'@'%' identified by 'devplayg12!@';
+grant all privileges on devplayg.* to 'YOURDATABASE'@'%';
 flush privileges;
 ```
