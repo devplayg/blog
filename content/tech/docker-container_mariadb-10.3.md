@@ -80,6 +80,6 @@ select host, user, password from mysql.user;
 
 ```sql
 create user 'devplayg'@'%' identified by 'devplayg12!@';
-grant all privileges on devplayg.* to 'YOURDATABASE'@'%';
+grant all privileges on YOURDATABASE.* to 'devplayg'@'%';
 flush privileges;
 ```
