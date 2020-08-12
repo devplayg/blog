@@ -34,3 +34,13 @@ Apache HTTP
     
 [MariaDB 10.3](https://devplayg.com/tech/docker-container_mariadb-10.3/)
 
+### Network join
+
+    docker network create my-net
+    docker network ls
+    docker network inspect my-net
+
+    docker network connect my-net gopher
+    docker network connect my-net gopher-db
+
+    docker network inspect my-net
