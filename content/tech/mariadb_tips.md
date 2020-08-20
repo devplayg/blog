@@ -80,3 +80,22 @@ Creating user
     grant all privileges on smartfactory.* to 'devplayg'@'localhost';
     grant all privileges on facex.* to 'devplayg'@'localhost';
     flush privileges;
+
+Json column
+
+    CREATE TABLE pol_json (
+        `policy_id` INT NOT NULL AUTO_INCREMENT,
+        `policy` JSON NOT NULL,
+        PRIMARY KEY (`policy_id`)
+    );
+
+    TRUNCATE TABLE pol_json;
+    INSERT INTO pol_json(policy) VALUES
+        (JSON_OBJECT('id', 1, 'name', 'won', 'company', JSON_OBJECT('name','Devplayg'))),
+        (JSON_OBJECT('id', 2, 'name', 'dain', 'company', JSON_OBJECT('name','China'))),
+        (JSON_OBJECT('id', 3, 'name', 'jisan', 'company', JSON_OBJECT('name','Market'))),
+        (JSON_OBJECT('id', 4, 'name', 'jisoo', 'company', JSON_OBJECT('name','Art'))),
+        ('{"id": 5, "name": "extra", "company": {"name": "dontknow"}}');
+
+    SELECT JSON_EXTRACT(policy, '$.name'), JSON_EXTRACT(policy, '$.company.name') FROM pol_json
+    WHERE json_value(policy, '$.name') = 'won'
