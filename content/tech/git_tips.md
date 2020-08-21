@@ -99,3 +99,20 @@ To remove a submodule you need to:
 - Run rm -rf .git/modules/path_to_submodule (no trailing slash).
 - Commit git commit -m "Removed submodule "
 - Delete the now untracked submodule files rm -rf path_to_submodule
+
+### Moving repository
+
+    git clone --mirror {git Repository 주소}
+	git clone --mirror https://github.com/##your_id##/repositoryToCopy.git
+	mv repositoryToCopy.git .git
+	git remote set-url origin {NEW_REPO}
+	git push --mirror
+
+
+error ? Clear cred!
+
+	git config --system --unset credential.helper 
+
+Create and use token in auth
+
+	https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token
