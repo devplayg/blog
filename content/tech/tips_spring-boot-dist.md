@@ -49,3 +49,14 @@ RestartSec=60
 WantedBy=multi-user.target
 Alias=smartfactory.service
 ```
+
+
+### LDAP
+
+Spring boot + Security + LDAP
+    
+    javax.naming.ServiceUnavailableException
+    Since there are 10 seconds between the role search and the error, this may be a timeout from the LDAP server.
+    The search may be too slow… 
+    
+    -Dcom.sun.jndi.ldap.connect.pool.timeout=300000
