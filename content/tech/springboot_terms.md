@@ -13,6 +13,12 @@ tags:
     - spring boot
 ---
 
+### Spring Security
+
+스프링 기반 어플리케이션의 인증과 권한을 담당하는 프레임워크
+참고: https://sjh836.tistory.com/165
+
+
 ### 서블릿(Servlet)
 
 * 서블릿은 Java 클래스이다.
