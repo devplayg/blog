@@ -81,7 +81,7 @@ Creating user
     grant all privileges on facex.* to 'devplayg'@'localhost';
     flush privileges;
 
-Json column
+### Json column
 
     CREATE TABLE pol_json (
         `policy_id` INT NOT NULL AUTO_INCREMENT,
@@ -99,3 +99,8 @@ Json column
 
     SELECT JSON_EXTRACT(policy, '$.name'), JSON_EXTRACT(policy, '$.company.name') FROM pol_json
     WHERE json_value(policy, '$.name') = 'won'
+
+
+### Dump (no-data)
+
+    mysqldump -u root -p ##YOUR_DATABASE## -B -d --skip-add-drop-table > table_only.dump
