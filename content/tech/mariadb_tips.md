@@ -104,3 +104,33 @@ Creating user
 ### Dump (no-data)
 
     mysqldump -u root -p ##YOUR_DATABASE## -B -d --skip-add-drop-table > table_only.dump
+
+Backup script
+
+    backup() {
+        start=`date +%s`
+        local db=$1
+        local targetDir=$2
+        local user=$3
+        local pass=$4
+        local date=$5
+
+        printf "[`date --rfc-3339=seconds`] Running backup database [${db}]..."
+        dir=${targetDir%/}/${db}
+        mkdir -p $dir
+        mysqldump -u ${user} -p${pass} -B -d --skip-add-drop-table $db > ${dir}/${db}-table-${date}.sql
+        mysqldump -u ${user} -p${pass} -t  ${db} > ${dir}/${db}-data-${date}.sql
+
+        end=`date +%s`
+        runtime=$((end-start))
+        printf "done [${runtime}s] \n"
+    }
+
+
+    DATE=$(date +%Y%m%d_%H%M%S)
+    USER=#YOUR_USER#
+    PASS=#YOUR_PASS#
+    DIR=#BACKUP_DIR#
+
+    backup #DB1#  ${DIR} $USER $PASS $DATE
+    backup #DB2# ${DIR} $USER $PASS $DATE
