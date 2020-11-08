@@ -3,7 +3,7 @@ title: devplayg
 date: 2019-03-18T21:34:36+09:00
 categories:
     - about
-tags : 
+tags :
     - 누구냐넌
 type: posts
 ---
@@ -14,7 +14,7 @@ Music, Coding, Walking, Thinking, Playing, Eating
 
 ### What makes me down
 
-Life without what makes me high 
+Life without what makes me high
 
 ### **Please tell me who you are.**
 
@@ -28,12 +28,12 @@ Life without what makes me high
     * Go
     * Perl
     * Shell
-    * Spring Boot 
+    * Spring Boot
     * Etc.
 
-|<img src="/img/avatars/linux.png">|<img src="/img/avatars/gopher.png">|<img src="/img/avatars/perl.png">|<img src="/img/avatars/java.png">|
-|---|---|---|---|
-|Linux|Go|Perl|Java|
+|<img src="/img/avatars/linux.png">|<img src="/img/avatars/gopher.png">|<img src="/img/avatars/kotlin.png">|<img src="/img/avatars/perl.png">|<img src="/img/avatars/java.png">|
+|---|---|---|---|---|
+|Linux|Go|Kotlin|Perl|Java|
 
 ### Avatars
 
@@ -46,8 +46,8 @@ Life without what makes me high
 
 ### **Life Sayings and Quotes**
 
-Golang, Little Miss Sunshine, If I could make the world dance, 
-One band one sound, No woman no cry, 
+Golang, Little Miss Sunshine, If I could make the world dance,
+One band one sound, No woman no cry,
 
 
 Rob pike
@@ -68,4 +68,3 @@ Movie "Drumline"
 
 
 
- 
