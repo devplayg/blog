@@ -26,6 +26,7 @@ Life without what makes me high
 * Making kinds of bugs since 2000
 * Some stuff used to make bugs
     * Go
+    * Kotlin
     * Perl
     * Shell
     * Spring Boot
