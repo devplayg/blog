@@ -2,7 +2,7 @@
 title: 'Thymeleaf tips'
 type: posts
 date: 2019-07-25T00:00:00+09:00
-categories: 
+categories:
   - template engine
   - spring boot
   - template engine
@@ -27,14 +27,14 @@ tags:
 
 ### Locales
 
-        <div th:text="${#locale.country}">US</div>
-        <div th:text="${#locale.displayCountry}">미국</div>
-        <div th:text="${#locale.toLanguageTag()}">en-US</div>
-        <div th:text="${#locale.ISO3Country}">USA</div>
-        <div th:text="${#locale.ISO3Language}">eng</div>
-        <div th:text="${#locale.displayName}">영어 (미국)</div>
-        <div th:text="${#locale.language}">en</div>
-        <div th:text="${#locale.default}">ko_KR</div>
+    <div th:text="${#locale.country}">US</div>
+    <div th:text="${#locale.displayCountry}">미국</div>
+    <div th:text="${#locale.toLanguageTag()}">en-US</div>
+    <div th:text="${#locale.ISO3Country}">USA</div>
+    <div th:text="${#locale.ISO3Language}">eng</div>
+    <div th:text="${#locale.displayName}">영어 (미국)</div>
+    <div th:text="${#locale.language}">en</div>
+    <div th:text="${#locale.default}">ko_KR</div>
 
 ### Access "Application.yaml"
 

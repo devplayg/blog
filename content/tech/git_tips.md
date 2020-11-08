@@ -2,10 +2,10 @@
 title: 'Git tips'
 date: 2019-06-07T23:45:41+09:00
 lastmod: 2020-02-02T23:45:41+09:00
-categories: 
+categories:
     - version control
     - tips
-tags: 
+tags:
     - git
     - tag
     - branch
@@ -20,12 +20,12 @@ type: posts
 ### Adding submodules
 
     git clone git@github.com:YOUR_GIT_ID/parent.git
-    
+
     cd parent
     git submodule add git@github.com:YOUR_GIT_ID/child.git child
     git commit -m "submodule is added."
     git push
-    
+
 ### Updating submodule on parent
 
     git submodule init
@@ -34,27 +34,27 @@ type: posts
 ### Global account
 
     $ git config --global user.name "devplayg"
-    $ git config --global user.email "devplayg@gmail.com" 
+    $ git config --global user.email "devplayg@gmail.com"
 
 ### Local account
 
     $ git config --local user.name "devplayg"
-    $ git config --local user.email "devplayg@example.com 
+    $ git config --local user.email "devplayg@example.com
 
 ### Find and restore a deleted file in a Git repository
 
-Find     
+Find
 
-    git ls-files -d 
+    git ls-files -d
 
 Restore
 
     git checkout <filename>
 
 Find & restore
-    
+
     git ls-files -d | xargs git checkout --
-    
+
 
 ### Branch
 
@@ -63,7 +63,7 @@ Clone branch
     git clone -b <branch> <repo> [<dir>]
     git clone -b test_branch https://github.com/devplayg/himma
     git clone -b test_branch https://github.com/devplayg/himma himma_branch
-    
+
 List local branches
 
 	git branch
@@ -111,8 +111,8 @@ To remove a submodule you need to:
 
 error ? Clear cred!
 
-	git config --system --unset credential.helper 
+	git config --system --unset credential.helper
 
-Create and use token in auth
+### Creating a personal access token
 
 	https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token
