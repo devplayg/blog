@@ -47,6 +47,10 @@ flush privileges;
 
     mysqldump -u root --skip-add-drop-table -d -B -p aptxsm > aptxsm.tables.sql
 
+### Change primary key
+
+    ALTER TABLE my_table DROP PRIMARY KEY, ADD PRIMARY KEY(id);
+
 ### Installation MariaDB on Ubuntu 18.04
 
 https://downloads.mariadb.org/mariadb/repositories/#mirror=digitalocean-ams
