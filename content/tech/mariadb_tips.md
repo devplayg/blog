@@ -138,3 +138,18 @@ Backup script
 
     backup #DB1#  ${DIR} $USER $PASS $DATE
     backup #DB2# ${DIR} $USER $PASS $DATE
+
+
+
+### Grants
+
+    GRANT SELECT ON YOUR_DB.YOUR_TABLE1 TO '#USERNAME#'@'%' IDENTIFIED BY 'p@ssWord';
+    GRANT SELECT ON YOUR_DB.YOUR_TABLE2 TO '#USERNAME#'@'%' IDENTIFIED BY 'p@ssWord';
+
+### Display user grants
+    select host, user from mysql.user;
+    SHOW GRANTS FOR #USERNAME#;
+
+### Drop user
+
+    DROP USER '#USERNAME#'@'%';
