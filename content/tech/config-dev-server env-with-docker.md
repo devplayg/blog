@@ -1,5 +1,5 @@
 ---
-title: Using Docker0compose for local development environment
+title: Using Docker-compose for local development environment
 date: 2020-12-07T00:00:00+09:00
 type: posts
 categories:
