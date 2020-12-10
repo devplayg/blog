@@ -1,8 +1,15 @@
 ---
 title: JSON Tips
 date: 2020-11-28 00:00:00+09:00
+categories:
+    - minifier
+    - prettify
+    - docker
 tags:
+    - json
     - tips
+    - docker
+type: posts
 ---
 
 ### Minifier
@@ -26,5 +33,5 @@ Minify
 
 ### Beautifier
 
-    docker run -it --rm  -v "%CD%":/app python:3.7 python -mjson.tool /app/a.json    
+    docker run -it --rm  -v "%CD%":/app python:3.7 python -mjson.tool /app/a.json
     docker run -it --rm  -v "$PWD":/app python:3.7 python -mjson.tool /app/YOUR_FILE.json

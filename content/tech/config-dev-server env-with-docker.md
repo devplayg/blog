@@ -1,17 +1,26 @@
 ---
-title: Configuring development server environment with Docker
+title: Using Docker0compose for local development environment
 date: 2020-12-07T00:00:00+09:00
+type: posts
+categories:
+  - docker
+  - db
+  - server
 tags:
    - docker
-   - redis
-   - db
-   - mariadb
-   - cache
-   - server
+   - docker-compose
    - ubuntu
+   - redis
+   - mariadb
 ---
 
-docker-compose.yaml
+### Create network
+
+    docker network create -d bridge dev-net
+
+### Build environment
+
+`docker-compose.yaml`
 
 ```
 networks:
