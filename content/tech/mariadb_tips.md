@@ -45,7 +45,12 @@ flush privileges;
 
 ### Dump tables only
 
-    mysqldump -u root --skip-add-drop-table -d -B -p aptxsm > aptxsm.tables.sql
+    mysqldump -u root --skip-add-drop-table -d -B -p DATABASE > tables.sql
+
+### Dump data only
+
+    mysqldump -u root -p -t DATABASE table1 table2... > data.sql
+
 
 ### Change primary key
 
