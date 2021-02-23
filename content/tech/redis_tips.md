@@ -2,7 +2,9 @@
 title: Redis Tips
 ---
 
-Commands
+### Commands
+
+Common
 
     keys *
     del [key...]
@@ -10,3 +12,9 @@ Commands
     clear
     flushall
     smembers []
+
+Set
+
+    hmset user id 1234 name tom pw 12341
+    hget user name
+    del user
