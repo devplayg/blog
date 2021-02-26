@@ -24,6 +24,10 @@ Ubuntu 18.04
 
     docker run -dit --name ubt -v e:/gohome:/gohome ubuntu:18.04 bash
     
+OpenJDK 8
+
+    docker run -it -v e:/gohome:/gohome --name jdk8 openjdk:8-jdk
+    
 Redis
 
     docker run -dit -p 6379:6379 --name redis -v e:/data/redis:/data redis
