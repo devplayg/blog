@@ -116,3 +116,7 @@ error ? Clear cred!
 ### Creating a personal access token
 
 	https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token
+
+### Adding executable permission to file git (not on bash mode)
+
+    git update-index --chmod=+x foo.sh
