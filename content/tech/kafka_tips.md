@@ -80,3 +80,8 @@ tags:
     test-offset     0          0               57              57              -               -               -
     test-offset     4          0               64              64              -               -               -
     test-offset     3          0               58              58              -               -               -
+    
+    
+### Shift offsets
+
+    $ $KAFKA_HOME/bin/kafka-consumer-groups.sh --bootstrap-server $KAFKA --group testgroup2 --reset-offsets --shift-by -10 --topic test-offset --execute
