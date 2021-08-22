@@ -55,6 +55,16 @@ Find & restore
 
     git ls-files -d | xargs git checkout --
 
+## Fixing a broken submodule
+
+    git clone https://github.com/devplayg/parent.git
+    cd parent
+    git submodule init
+    git submodule sync
+    git submodule update --remote
+    git commit * -m "fixed"
+    git push origin master
+
 
 ### Branch
 
@@ -120,3 +130,6 @@ error ? Clear cred!
 ### Adding executable permission to file git (not on bash mode)
 
     git update-index --chmod=+x foo.sh
+
+
+
