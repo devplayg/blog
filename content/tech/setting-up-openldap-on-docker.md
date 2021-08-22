@@ -2,7 +2,7 @@
 title: Setting up OpenLDAP on docker
 date: 2020-12-27T00:00:00+09:00
 type: posts
-tags
+tags:
   - docker
   - openldap
 categories:

@@ -1,11 +1,12 @@
 ---
-title: Using Docker-compose for local development environment
+title: Setting up development environments with docker-compose
 date: 2020-12-07T00:00:00+09:00
 type: posts
 categories:
   - docker
   - db
   - server
+  - redis
 tags:
    - docker
    - docker-compose
@@ -30,10 +31,10 @@ networks:
 services:
   db:
     image: mariadb:10.3
-    container_name: dev-db
+    container_name: db
     volumes:
-      - /d/data/dev/mariadb/data:/var/lib/mysql
-      - /d/data/dev/mariadb/conf.d:/etc/mysql/conf.d
+      - /d/data/mariadb/data:/var/lib/mysql
+      - /d/data/mariadb/conf.d:/etc/mysql/conf.d
     environment:
       - MYSQL_ROOT_PASSWORD=devplayg12!@
       - MYSQL_DATABASE=devplayg
@@ -49,19 +50,20 @@ services:
 
   redis:
     image: redis:latest
-    container_name: dev-redis
+    container_name: redis
     volumes:
-      - /d/data/dev/redis/redis-data:/var/lib/redis
-      - /d/data/dev/redis/redis.conf:/usr/local/etc/redis/redis.conf
-    ports:
-      - "6379:6379"
+      - /d/data/redis/redis-data:/var/lib/redis
+      - /d/data/redis/redis.conf:/usr/local/etc/redis/redis.conf
+    restart: unless-stopped
     networks:
      - network1
+    ports:
+      - "6379:6379"
     command: ['redis-server', '/usr/local/etc/redis/redis.conf']
 
   server:
     image: ubuntu:18.04
-    container_name: dev-server
+    container_name: server
     volumes:
       - /e/gohome:/gohome
     networks:
