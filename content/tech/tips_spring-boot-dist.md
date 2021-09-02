@@ -18,6 +18,10 @@ tags:
 
     gradlew bootjar
     
+### Listing dependencies
+
+    gradlew :hippo-api:dependencies --configuration compileClasspath
+    
 ### Running
 
 Normal
