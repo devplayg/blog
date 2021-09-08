@@ -19,4 +19,8 @@ OffsetDateTime.now().format(DateTimeFormatter.ISO_OFFSET_DATE_TIME)  // 2021-09-
 OffsetDateTime.now().format(DateTimeFormatter.ISO_OFFSET_TIME)       // 10:20:57.6455284+09:00           
 OffsetDateTime.now().format(DateTimeFormatter.ISO_ZONED_DATE_TIME)   // 2021-09-08T10:20:57.6465296+09:00
 OffsetDateTime.now().format(DateTimeFormatter.RFC_1123_DATE_TIME)    // Wed, 8 Sep 2021 10:20:57 +0900   
+
+LocalDateTime.now().toLocalDate().atStartOfDay().format(DateTimeFormatter.ISO_DATE_TIME)                        // 2021-09-08T00:00:00
+LocalDateTime.now().toLocalDate().atStartOfDay().plusSeconds(86400 - 1).format(DateTimeFormatter.ISO_DATE_TIME) // 2021-09-08T23:59:59
+
 ```
