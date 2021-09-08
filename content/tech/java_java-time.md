@@ -3,24 +3,27 @@ title: Java time
 ---
 
 ```kotlin
-LocalDateTime.now().format(DateTimeFormatter.BASIC_ISO_DATE)        // 20210908
-LocalDateTime.now().format(DateTimeFormatter.ISO_DATE)              // 2021-09-08
-LocalDateTime.now().format(DateTimeFormatter.ISO_DATE_TIME)         // 2021-09-08T09:59:17.6537137
-LocalDateTime.now().format(DateTimeFormatter.ISO_LOCAL_DATE)        // 2021-09-08
-LocalDateTime.now().format(DateTimeFormatter.ISO_LOCAL_DATE_TIME)   // 2021-09-08T09:59:17.6537137
-LocalDateTime.now().format(DateTimeFormatter.ISO_LOCAL_TIME)        // 09:59:17.6537137
-LocalDateTime.now().format(DateTimeFormatter.ISO_ORDINAL_DATE)      // 2021-251
-LocalDateTime.now().format(DateTimeFormatter.ISO_TIME)              // 09:59:17.6537137
-LocalDateTime.now().format(DateTimeFormatter.ISO_WEEK_DATE)         // 2021-W36-3
+val ldt = LocalDateTime.parse("2006-01-02 15:04:05", DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")
+ldt.toString()                                                                2006-01-02T15:04:05
+ldt.format(DateTimeFormatter.BASIC_ISO_DATE)                                  20060102
+ldt.format(DateTimeFormatter.ISO_DATE)                                        2006-01-02
+ldt.format(DateTimeFormatter.ISO_DATE_TIME)                                   2006-01-02T15:04:05
+ldt.format(DateTimeFormatter.ISO_LOCAL_DATE)                                  2006-01-02
+ldt.format(DateTimeFormatter.ISO_LOCAL_DATE_TIME)                             2006-01-02T15:04:05
+ldt.format(DateTimeFormatter.ISO_LOCAL_TIME)                                  15:04:05
+ldt.format(DateTimeFormatter.ISO_ORDINAL_DATE)                                2006-002
+ldt.format(DateTimeFormatter.ISO_TIME)                                        15:04:05
+ldt.format(DateTimeFormatter.ISO_WEEK_DATE)                                   2006-W01-1
+ldt.toLocalDate().atStartOfDay().format(DateTimeFormatter.ISO_DATE_TIME)      2006-01-02T00:00:00
+ldt.toLocalDate().atStartOfDay().plusSeconds(86400 - 1)
+        .format(DateTimeFormatter.ISO_DATE_TIME)                              2006-01-02T23:59:59
 
-OffsetDateTime.now().format(DateTimeFormatter.ISO_INSTANT)           // 2021-09-08T01:20:57.637528500Z   
-OffsetDateTime.now().format(DateTimeFormatter.ISO_OFFSET_DATE)       // 2021-09-08+09:00                 
-OffsetDateTime.now().format(DateTimeFormatter.ISO_OFFSET_DATE_TIME)  // 2021-09-08T10:20:57.6445277+09:00
-OffsetDateTime.now().format(DateTimeFormatter.ISO_OFFSET_TIME)       // 10:20:57.6455284+09:00           
-OffsetDateTime.now().format(DateTimeFormatter.ISO_ZONED_DATE_TIME)   // 2021-09-08T10:20:57.6465296+09:00
-OffsetDateTime.now().format(DateTimeFormatter.RFC_1123_DATE_TIME)    // Wed, 8 Sep 2021 10:20:57 +0900   
-
-LocalDateTime.now().toLocalDate().atStartOfDay().format(DateTimeFormatter.ISO_DATE_TIME)                        // 2021-09-08T00:00:00
-LocalDateTime.now().toLocalDate().atStartOfDay().plusSeconds(86400 - 1).format(DateTimeFormatter.ISO_DATE_TIME) // 2021-09-08T23:59:59
-
+val odt = OffsetDateTime.parse("2006-01-02T15:04:05+09:00")
+odt.toString()                                                                2006-01-02T15:04:05+09:00
+odt.format(DateTimeFormatter.ISO_INSTANT)                                     2006-01-02T06:04:05Z
+odt.format(DateTimeFormatter.ISO_OFFSET_DATE)                                 2006-01-02+09:00
+odt.format(DateTimeFormatter.ISO_OFFSET_DATE_TIME)                            2006-01-02T15:04:05+09:00
+odt.format(DateTimeFormatter.ISO_OFFSET_TIME)                                 15:04:05+09:00
+odt.format(DateTimeFormatter.ISO_ZONED_DATE_TIME)                             2006-01-02T15:04:05+09:00
+odt.format(DateTimeFormatter.RFC_1123_DATE_TIME)                              Mon, 2 Jan 2006 15:04:05 +0900
 ```
