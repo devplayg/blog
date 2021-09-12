@@ -19,6 +19,10 @@ ldt.format(DateTimeFormatter.ISO_WEEK_DATE)                                   20
 ldt.toLocalDate().atStartOfDay().format(DateTimeFormatter.ISO_DATE_TIME)      2006-01-02T00:00:00
 ldt.toLocalDate().atStartOfDay().plusSeconds(86400 - 1)
         .format(DateTimeFormatter.ISO_DATE_TIME)                              2006-01-02T23:59:59
+
+Timestamp.valueOf(ldt)                                                        2006-01-02 15:04:05.0
+Timestamp.valueOf(ldt).time                                                   1136181845000
+Timestamp.valueOf(ldt).toLocalDateTime()                                      2006-01-02T15:04:05
 ```
 
 
