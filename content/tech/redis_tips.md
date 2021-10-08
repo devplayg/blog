@@ -18,6 +18,11 @@ Set
     hmset user id 1234 name tom pw 12341
     hget user name
     del user
+    
+    
+Scan
+
+    scan 0 MATCH hippo:* count 100
 
 ### Create redis-cluster with Docker
 
