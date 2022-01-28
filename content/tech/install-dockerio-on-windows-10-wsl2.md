@@ -1,5 +1,5 @@
 ---
-title: 윈도우 Docker Desktop 대체
+title: 윈도우10, Docker Desktop 없이 사용하기
 date: 2022-01-28T00:00:00+09:00
 type: posts
 categories:
@@ -9,33 +9,38 @@ tags:
     - docker
     - windows
     - docker desktop
+   - 윈도우 Docker Desktop 대체
 ---
 
 Microsoft Store 에서 Window Terminal 설치
 
 - https://docs.microsoft.com/ko-kr/windows/terminal/install
 
+관리자 권한으로 Window Terminal 실행 후 WSL2 설치명령어 실행
 
-WSL2 설치
-
-    wsl.exe --install 
+    wsl.exe --install
     dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
     dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 
-Microsoft Store에서 Ubuntu 설치
+Microsoft Store 에서 필요한 Ubuntu 설치
 
 WSL2 설치확인
 
-    PS C:\Users\YOUR_ACCOUNT> wsl -l -v
+    wsl -l -v
+    ----
     NAME            STATE           VERSION
     * Ubuntu-18.04    Running         2
 
-Docker.io 설치
+Docker 설치
 
     sudo apt update
     sudo apt upgrade
     sudo apt install docker.io
 
-start
+Docker 버전확인
 
-    sudo dockerd
+    docker version
+
+Docker 시작
+
+    sudo dockerd &
