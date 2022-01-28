@@ -4,3 +4,5 @@ git submodule sync
 git submodule update --remote
 git commit * -m "fixed"
 git push origin master
+
+rem git commit public -m "added"
