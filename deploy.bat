@@ -8,4 +8,5 @@ git push origin +master
 cd ..
 git add .
 git commit -m "changed"
-git push origin +master
+rem git push origin +master
+git push --recurse-submodules=check
