@@ -5,4 +5,6 @@ git submodule update --remote
 git commit * -m "fixed"
 git push origin master
 
-rem git commit public -m "added"
+cd public
+git checkout master
+cd ..
