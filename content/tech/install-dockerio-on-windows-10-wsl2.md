@@ -9,7 +9,7 @@ tags:
     - docker
     - windows
     - docker desktop
-   - 윈도우 Docker Desktop 대체
+    - 윈도우 Docker Desktop 대체
 ---
 
 Microsoft Store 에서 Window Terminal 설치
