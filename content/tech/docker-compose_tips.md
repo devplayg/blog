@@ -4,10 +4,17 @@ type: posts
 date: 2022-01-29T00:28:15+09:00
 series:
 - Docker
-  categories:
+categories:
 - tips
 - docker
 - docker-composed
+tags:
+- docker
+- docker-compose
+- redis
+- redis-cluster
+- ldap
+- mysql
 ---
 
 Builds, (re)creates, starts, and attaches to containers for a service.
