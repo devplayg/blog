@@ -1,27 +1,26 @@
 ---
-title: 'CURL tips'
-date: 2019-08-19T00:00:00+09:00
+title: Tips for Docker Compose
 type: posts
+date: 2022-01-29T00:28:15+09:00
+series:
+- Docker
 categories:
-    - tips
-tags:
-    - CURL
-    - tips
-    - post
-    - get
-    
+- tips
+- docker
+- docker-composed
 ---
 
-### 파일 전송
+Builds, (re)creates, starts, and attaches to containers for a service.
 
-    curl -F "file=@nssm.exe" http://127.0.0.1/filestorage/uploadFile
+    docker-compose  up -d
 
-### 여러 파일 전송
 
-    curl -F "files=@nssm.exe" -F "files=@c.txt" http://127.0.0.1/filestorage/uploadMultipleFiles
-    curl -F "files[]=@nssm.exe" -F "files[]=@c.txt" http://127.0.0.1/filestorage/uploadMultipleFiles
+Stops containers and removes containers, networks, volumes, and images created by up.
 
-#### 파일과 파라메터 전송
+    sudo docker-compose   down
 
-    curl -F "files=@nssm.exe" -F "event_type=3" http://127.0.0.1/filestorage/uploadMultipleFiles
-    curl -F "file=@nssm.exe" -F "event_type=3" -F "cameraId=109" -F "date=2019-01-02 12:34:56" http://127.0.0.1/filestorage/uploadFile2
+
+Remove containers for services not defined in the Compose file
+
+    sudo docker-compose   down --remove-orphans
+
