@@ -31,7 +31,7 @@ pluralizelisttitles = false
     # https://highlightjs.org
     highlightjs = true
     highlightjsstyle = "agate"
-    highlightjslanguages = ["go", "java", "javascript", "yaml", "shell", "bash"]
+    highlightjslanguages = ["go", "java", "javascript", "yaml", "shell", "bash", "kotlin"]
 
 
     # please choose either GraphComment or Disqus or Utterances
