@@ -1,5 +1,5 @@
 ---
-title: Tips for Docker Compose
+title: Design patterns
 type: posts
 date: 2016-11-21T00:28:15+09:00
 series:
@@ -12,13 +12,15 @@ tags:
 ---
 
 Design Patterns in GOF
-
+---
 - Factory
 - Factory Method
 - Abstract Factory
 - Builder
 - Singleton
 - Prototype
+
+---
 
 - Adapter
 - Proxy
@@ -27,6 +29,8 @@ Design Patterns in GOF
 - Bridge
 - Flyweight
 - Composite
+
+---
 
 - Strategy
 - State
@@ -39,4 +43,3 @@ Design Patterns in GOF
 - Visitor
 - Iterator
 - Interpreter
-
