@@ -27,10 +27,6 @@ tags:
 
 
 ```kotlin
-interface Language {
-        run()
-}
-
 class Golang: Language {
         run() {
             println("gopher")
@@ -61,3 +57,5 @@ golang.run()
 kotlin.run()
 javascript.run()
 ```
+
+run() function is open for extension, but closed for modification
