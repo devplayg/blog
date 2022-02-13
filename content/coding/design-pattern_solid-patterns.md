@@ -1,6 +1,6 @@
 ---
 title: Design Patterns > SOLID patterns
-type: posts
+type: post
 date: 2016-11-21T00:28:15+09:00
 series:
     - Design Patterns
@@ -14,48 +14,67 @@ tags:
 
 ### SOLID 패턴
 
-- SR: Single Responsibility
-- OC: Open/Closed
-- LS: Liskov Substitution
-- IS: Interface Segregation
-- DI: Dependency Inversion
-
-
-### Single Responsibility(SRP)
-
-- _"should be open for extension, but closed for modification"_
+- SRP (Single Responsibility)
+- OCP (Open/Closed)
+- LSP (Liskov Substitution)
+- ISP (Interface Segregation)
+- DIP (Dependency Inversion)
 
 
 ```kotlin
 class Golang: Language {
-        run() {
+        compile() {
             println("gopher")
         }
 }
 
 class Kotlin: Language {
-        run() {
+        compile() {
             println("still on JVM")
         }
 }
 
-class Javascript: Language {
-        run() {
+class Java: Language {
+        compile() {
             println("legendary")
         }
 }
-
-fun run(language: Language) {
-        language.run()
-}
-
-val golang = Language(GOLANG)
-val kotlin = Language(KOTLIN)
-val javascript = Language(JAVASCRIPT)
-
-golang.run()
-kotlin.run()
-javascript.run()
 ```
 
-run() function is open for extension, but closed for modification
+
+### SRP (Single Responsibility)
+
+- _"should be open for extension, but closed for modification"_
+
+```
+fun run(language: Language) {
+        language.compile()
+}
+val golang = Language(GOLANG)
+val kotlin = Language(KOTLIN)
+val java = Language(JAVA)
+
+run(golang)
+run(kotlin)
+run(java)
+```
+
+compile() function is open for extension, but closed for modification
+
+### LSP: Liskov Substitution
+
+``` kotlin
+val golang = Language(GOLANG)
+val kotlin = Language(KOTLIN)
+val java = Language(JAVA)
+```
+
+### ISP (Interface Segregation)
+
+
+
+
+### DIP (Dependency Inversion)
+
+ParkingLot
+

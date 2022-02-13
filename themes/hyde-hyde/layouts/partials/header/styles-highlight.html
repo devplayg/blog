@@ -1,7 +1,7 @@
 {{ if .Site.Params.highlightjs }}
 {{ if or (not (isset .Params "highlight")) (.Params.highlight) }}
 <!-- highlightjs -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/{{ .Site.Params.highlightjsstyle | default "default" }}.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/styles/{{ .Site.Params.highlightjsstyle | default "default" }}.min.css">
 {{ end }}
 {{ end }}
 {{ if .Site.Params.PygmentsUseClasses }}

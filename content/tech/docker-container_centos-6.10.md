@@ -1,12 +1,12 @@
 ---
-title: Installing and using CentOS 6.10 via Docker 
+title: Installing and using CentOS 6.10 via Docker
 type: posts
 date: 2020-01-01T18:00:00+09:00
 series:
     - Docker
-categories: 
+categories:
   - docker
-tags: 
+tags:
   - docker
   - centos
   - centos 6.10
@@ -21,25 +21,25 @@ in general
 ```
 $ docker run -it --name c6 centos:6.10 bash
 ```
-    
+
 with sharing filesystem
 
-```     
+```
 $ docker run -it -v /host/dir:/container/dir --name c6 centos:6.10 bash
-```   
+```
 
 with binding container ports to the host
 
-```        
+```
 $ docker run -p 8000:80 -it --name c6 centos:6.10 bash
 ```
 
 - 8000: Host port
-- 80: Container port 
+- 80: Container port
 
 
 ## *My favorite*
-    
+
 ```
 $ docker run -it -v e:/gohome:/gohome -p 8000:8000 --name c6 centos:6.10 bash
 ```
@@ -50,7 +50,7 @@ $ docker run -it -v e:/gohome:/gohome -p 8000:8000 --name c6 centos:6.10 bash
 $ echo '[base]
 name=CentOS-$releasever - Base
 baseurl=http://mirror.kakao.com/centos/$releasever/os/$basearch/
-gpgcheck=0 
+gpgcheck=0
 [updates]
 name=CentOS-$releasever - Updates
 baseurl=http://mirror.kakao.com/centos/$releasever/updates/$basearch/
@@ -65,7 +65,7 @@ $ yum repolist
 - install Go
 
 ```
-$ curl https://dl.google.com/go/go1.13.12.linux-amd64.tar.gz | tar xvfz - -C /
+$ curl https://go.dev/dl/go1.16.linux-amd64.tar.gz | tar xvfz - -C /
 ```
 
 - set profile

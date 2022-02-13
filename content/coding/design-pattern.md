@@ -11,16 +11,14 @@ tags:
 - 디자인 패턴
 ---
 
-Design Patterns in GOF
----
+### Design Patterns in GOF
+
 - Factory
 - Factory Method
 - Abstract Factory
 - Builder
 - Singleton
 - Prototype
-
----
 
 - Adapter
 - Proxy
@@ -29,8 +27,6 @@ Design Patterns in GOF
 - Bridge
 - Flyweight
 - Composite
-
----
 
 - Strategy
 - State
