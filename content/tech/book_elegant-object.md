@@ -1,7 +1,7 @@
 ---
 title: 엘레강트 오브젝트
 type: posts
-date: 2022-04-05T21:34:36+09:00
+date: 2022-04-01T21:34:36+09:00
 categories:
   - 책
   - 엘레강트 오브젝트
@@ -22,3 +22,21 @@ tags:
   - 클래스를 객체의 능동적 관리자로 생각해야 함
   - 클래스가 객체를 인스턴스화한다
   - 클래스를 객체의 storage unit 또는 warehouse 라고 봐야함
+
+### 1.2 생성자 하나를 주 생성자로 만드세요
+
+- one primary, many secondary
+- method overloading 의 중요성
+
+    class Cash {
+        private int dollors;
+        Cash(float dir) {
+            this((int) dlr);
+        }
+        Cash(float dir) {
+            this(Cache.parse(dlr));
+        }
+        Cash(int dlr) {
+            this.dollors = dlr;
+        }
+    }
