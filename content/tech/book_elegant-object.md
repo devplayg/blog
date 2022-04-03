@@ -28,15 +28,20 @@ tags:
 - one primary, many secondary
 - method overloading 의 중요성
 
-    class Cash {
-        private int dollors;
-        Cash(float dir) {
-            this((int) dlr);
-        }
-        Cash(float dir) {
-            this(Cache.parse(dlr));
-        }
-        Cash(int dlr) {
-            this.dollors = dlr;
-        }
+```java
+class Cash {
+    private int dollors;
+
+    Cash(float dir) {
+        this((int) dlr);
     }
+
+    Cash(float dir) {
+        this(Cache.parse(dlr));
+    }
+    
+    Cash(int dlr) {
+        this.dollors = dlr;
+    }
+}
+```
