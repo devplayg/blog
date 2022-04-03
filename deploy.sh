@@ -1,3 +1,5 @@
+#!/bin/zsh
+
 hugo -t hyde-hyde
 
 cd public
