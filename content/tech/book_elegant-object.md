@@ -39,7 +39,7 @@ class Cash {
     Cash(float dir) {
         this(Cache.parse(dlr));
     }
-    
+
     Cash(int dlr) {
         this.dollors = dlr;
     }
