@@ -4,7 +4,7 @@
 크리에이트브 모드 유저 데려오기
 
     /tp @a[gamemode=creative] ~ ~ ~
-    
+
 다른 유저 위치로 순간이동
 
     /tp 유저이름
@@ -12,15 +12,22 @@
 플레이어 제외  생물 죽이기
 
     /kill @e[type=!minecraft:player]
-    
-    
-    
+
+
+
 날씨
 
     /weather clear
     /weather rain
 
+시간
 
+    /time set day
+
+날씨/시간 고정
+
+    /gamerule doDaylightCycle false
+    /gamerule doWeatherCycle false
 
 건물
 
